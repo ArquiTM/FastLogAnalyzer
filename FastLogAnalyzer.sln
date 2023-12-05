@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.34031.82
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FastLogAnalyzer", "FastLogAnalyzer\FastLogAnalyzer.csproj", "{11149843-6094-4FC3-A47C-A5DB788AEFA2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{11149843-6094-4FC3-A47C-A5DB788AEFA2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{11149843-6094-4FC3-A47C-A5DB788AEFA2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{11149843-6094-4FC3-A47C-A5DB788AEFA2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{11149843-6094-4FC3-A47C-A5DB788AEFA2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {777C4CA8-E018-4E0D-96EB-F56E0840FE55}
+	EndGlobalSection
+EndGlobal
