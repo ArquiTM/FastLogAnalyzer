@@ -1,6 +1,6 @@
 ﻿namespace FastLogAnalyzer
 {
-    partial class Form1
+    partial class FormApp
     {
         /// <summary>
         /// Required designer variable.
@@ -37,6 +37,10 @@
             this.textBoxAddressLog = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
+            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
+            this.textBoxStatus = new System.Windows.Forms.TextBox();
+            this.labelTrackId = new System.Windows.Forms.Label();
+            this.labelTrackIdNumber = new System.Windows.Forms.Label();
             this.groupBoxSelectLog.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -72,13 +76,14 @@
             this.buttonSelectLog.TabIndex = 4;
             this.buttonSelectLog.Text = "...";
             this.buttonSelectLog.UseVisualStyleBackColor = true;
+            this.buttonSelectLog.Click += new System.EventHandler(this.buttonSelectLog_Click);
             // 
             // comboBoxFails
             // 
             this.comboBoxFails.FormattingEnabled = true;
             this.comboBoxFails.Location = new System.Drawing.Point(5, 70);
             this.comboBoxFails.Name = "comboBoxFails";
-            this.comboBoxFails.Size = new System.Drawing.Size(172, 21);
+            this.comboBoxFails.Size = new System.Drawing.Size(224, 21);
             this.comboBoxFails.TabIndex = 3;
             // 
             // labelRow
@@ -123,15 +128,53 @@
             this.textBox1.Size = new System.Drawing.Size(883, 466);
             this.textBox1.TabIndex = 2;
             // 
-            // Form1
+            // openFileDialog1
+            // 
+            this.openFileDialog1.FileName = "openFileDialog1";
+            // 
+            // textBoxStatus
+            // 
+            this.textBoxStatus.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBoxStatus.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxStatus.Location = new System.Drawing.Point(23, 283);
+            this.textBoxStatus.Multiline = true;
+            this.textBoxStatus.Name = "textBoxStatus";
+            this.textBoxStatus.Size = new System.Drawing.Size(229, 98);
+            this.textBoxStatus.TabIndex = 3;
+            this.textBoxStatus.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // labelTrackId
+            // 
+            this.labelTrackId.AutoSize = true;
+            this.labelTrackId.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelTrackId.Location = new System.Drawing.Point(25, 414);
+            this.labelTrackId.Name = "labelTrackId";
+            this.labelTrackId.Size = new System.Drawing.Size(73, 20);
+            this.labelTrackId.TabIndex = 4;
+            this.labelTrackId.Text = "Track ID:";
+            // 
+            // labelTrackIdNumber
+            // 
+            this.labelTrackIdNumber.AutoSize = true;
+            this.labelTrackIdNumber.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelTrackIdNumber.Location = new System.Drawing.Point(103, 414);
+            this.labelTrackIdNumber.Name = "labelTrackIdNumber";
+            this.labelTrackIdNumber.Size = new System.Drawing.Size(0, 20);
+            this.labelTrackIdNumber.TabIndex = 5;
+            // 
+            // FormApp
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1153, 566);
+            this.Controls.Add(this.labelTrackIdNumber);
+            this.Controls.Add(this.labelTrackId);
+            this.Controls.Add(this.textBoxStatus);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.groupBoxSelectLog);
-            this.Name = "Form1";
+            this.Name = "FormApp";
             this.Text = "Form1";
             this.groupBoxSelectLog.ResumeLayout(false);
             this.groupBoxSelectLog.PerformLayout();
@@ -148,9 +191,13 @@
         private System.Windows.Forms.ComboBox comboBoxFails;
         private System.Windows.Forms.Label labelRow;
         private System.Windows.Forms.TextBox textBoxNRows;
-        private System.Windows.Forms.TextBox textBoxAddressLog;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox textBox1;
+        public System.Windows.Forms.OpenFileDialog openFileDialog1;
+        public System.Windows.Forms.TextBox textBoxAddressLog;
+        private System.Windows.Forms.TextBox textBoxStatus;
+        private System.Windows.Forms.Label labelTrackId;
+        private System.Windows.Forms.Label labelTrackIdNumber;
     }
 }
 

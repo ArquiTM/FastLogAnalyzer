@@ -1,8 +1,7 @@
 C:\Projetos\FastLogAnalyzer\FastLogAnalyzer\bin\Debug\FastLogAnalyzer.exe.config
 C:\Projetos\FastLogAnalyzer\FastLogAnalyzer\bin\Debug\FastLogAnalyzer.exe
 C:\Projetos\FastLogAnalyzer\FastLogAnalyzer\bin\Debug\FastLogAnalyzer.pdb
-C:\Projetos\FastLogAnalyzer\FastLogAnalyzer\obj\Debug\FastLogAnalyzer.csprojAssemblyReference.cache
-C:\Projetos\FastLogAnalyzer\FastLogAnalyzer\obj\Debug\FastLogAnalyzer.Form1.resources
+C:\Projetos\FastLogAnalyzer\FastLogAnalyzer\obj\Debug\FastLogAnalyzer.FormApp.resources
 C:\Projetos\FastLogAnalyzer\FastLogAnalyzer\obj\Debug\FastLogAnalyzer.Properties.Resources.resources
 C:\Projetos\FastLogAnalyzer\FastLogAnalyzer\obj\Debug\FastLogAnalyzer.csproj.GenerateResource.cache
 C:\Projetos\FastLogAnalyzer\FastLogAnalyzer\obj\Debug\FastLogAnalyzer.csproj.CoreCompileInputs.cache
