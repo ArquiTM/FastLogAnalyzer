@@ -8,6 +8,7 @@ namespace FastLogAnalyzer
     {
         private static FormApp INSTANCE = null;
         SelectLog SL;
+        OpenLogInExcel OLIE;
 
 
         public FormApp()
@@ -25,6 +26,7 @@ namespace FastLogAnalyzer
         private void ClassesInit()
         {
             SL = new SelectLog();
+            OLIE = new OpenLogInExcel();
         }
         public static FormApp getInstance()
         {
@@ -39,7 +41,26 @@ namespace FastLogAnalyzer
             labelTrackIdNumber.Text = SL.SelectingLog();
 
             if (labelTrackIdNumber.Text != "" && SL.Extract())
+            {
                 textBoxStatus.Text = "File Imported Successfully!!!";
+                dataTable();
+            }
+
+            if (textBoxAddressLog.Text != "")
+                comboBoxFails.Enabled = true;
+        }
+
+        private void dataTable()
+        {
+            string sDir = @".\temp\prod\log\";
+            string filePath = string.Empty;
+            foreach (string f in Directory.GetFiles(sDir))
+            {
+                if (!f.Contains("startup") && !f.Contains(".xml"))
+                    filePath = f;
+            }
+
+            OLIE.FileToVet(filePath);
         }
     }
 }

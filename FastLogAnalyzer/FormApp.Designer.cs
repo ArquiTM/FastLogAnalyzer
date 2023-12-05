@@ -80,6 +80,8 @@
             // 
             // comboBoxFails
             // 
+            this.comboBoxFails.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBoxFails.Enabled = false;
             this.comboBoxFails.FormattingEnabled = true;
             this.comboBoxFails.Location = new System.Drawing.Point(5, 70);
             this.comboBoxFails.Name = "comboBoxFails";
@@ -106,6 +108,7 @@
             // 
             this.textBoxAddressLog.Location = new System.Drawing.Point(6, 33);
             this.textBoxAddressLog.Name = "textBoxAddressLog";
+            this.textBoxAddressLog.ReadOnly = true;
             this.textBoxAddressLog.Size = new System.Drawing.Size(171, 20);
             this.textBoxAddressLog.TabIndex = 0;
             // 
@@ -125,6 +128,7 @@
             this.textBox1.Location = new System.Drawing.Point(258, 88);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
+            this.textBox1.ReadOnly = true;
             this.textBox1.Size = new System.Drawing.Size(883, 466);
             this.textBox1.TabIndex = 2;
             // 
@@ -139,6 +143,7 @@
             this.textBoxStatus.Location = new System.Drawing.Point(23, 283);
             this.textBoxStatus.Multiline = true;
             this.textBoxStatus.Name = "textBoxStatus";
+            this.textBoxStatus.ReadOnly = true;
             this.textBoxStatus.Size = new System.Drawing.Size(229, 98);
             this.textBoxStatus.TabIndex = 3;
             this.textBoxStatus.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
