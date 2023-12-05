@@ -9,4 +9,3 @@ C:\Projetos\FastLogAnalyzer\FastLogAnalyzer\obj\Debug\FastLogAnalyzer.exe
 C:\Projetos\FastLogAnalyzer\FastLogAnalyzer\obj\Debug\FastLogAnalyzer.pdb
 C:\Projetos\FastLogAnalyzer\FastLogAnalyzer\bin\Debug\System.IO.Compression.dll
 C:\Projetos\FastLogAnalyzer\FastLogAnalyzer\obj\Debug\FastLogAnalyzer.csproj.CopyComplete
-C:\Projetos\FastLogAnalyzer\FastLogAnalyzer\obj\Debug\FastLogAnalyzer.csprojAssemblyReference.cache

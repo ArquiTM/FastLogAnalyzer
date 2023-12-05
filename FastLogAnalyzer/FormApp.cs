@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
 using System.IO;
 using System.Windows.Forms;
 
@@ -42,7 +38,7 @@ namespace FastLogAnalyzer
         {
             labelTrackIdNumber.Text = SL.SelectingLog();
 
-            if (SL.Extract())
+            if (labelTrackIdNumber.Text != "" && SL.Extract())
                 textBoxStatus.Text = "File Imported Successfully!!!";
         }
     }

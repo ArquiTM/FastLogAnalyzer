@@ -11,6 +11,7 @@ namespace FastLogAnalyzer
         FormApp frmMain = FormApp.getInstance();
         string fileName;
         string destFile;
+
         public string SelectingLog()
         {
             try
@@ -19,20 +20,19 @@ namespace FastLogAnalyzer
                 if (frmMain.openFileDialog1.ShowDialog() == DialogResult.OK)
                 {
                     fileName = frmMain.openFileDialog1.FileName;
+                    frmMain.textBoxAddressLog.Text = fileName;
 
                     string fileNameLog = fileName.Replace(@"\\jagnt092\NexTestFailureLogsCAR", "");
                     destFile = @".\temp\" + fileNameLog;
-
 
                     File.Copy(fileName, destFile, true);
 
                     string[] trackId = fileNameLog.Split('_');
                     string temp = trackId[0];
                     temp = temp.Replace("\\", "");
+
                     return temp;
-
                 }
-
                 return "";
             }
             catch (Exception e)
@@ -40,8 +40,8 @@ namespace FastLogAnalyzer
                 MessageBox.Show(" " + e.Message);
                 return "";
             }
-
         }
+
         public bool Extract()
         {
             try
@@ -51,10 +51,8 @@ namespace FastLogAnalyzer
 
                 using (ZipArchive archive = ZipFile.Open(zipPath, ZipArchiveMode.Update))
                 {
-                    // archive.CreateEntryFromFile(NewFile, "NewEntry.txt");
                     archive.ExtractToDirectory(extractPath);
                 }
-
                 return true;
             }
             catch (Exception e)
