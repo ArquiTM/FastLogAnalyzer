@@ -1,18 +1,17 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.IO.Compression;
 using System.Windows.Forms;
+
 
 namespace FastLogAnalyzer
 {
-    class OpenLog
+    class SelectLog
     {
         FormApp frmMain = FormApp.getInstance();
         string fileName;
-        public string selectingLog()
+        string destFile;
+        public string SelectingLog()
         {
             try
             {
@@ -22,14 +21,14 @@ namespace FastLogAnalyzer
                     fileName = frmMain.openFileDialog1.FileName;
 
                     string fileNameLog = fileName.Replace(@"\\jagnt092\NexTestFailureLogsCAR", "");
-                    string destFile = @".\temp\" + fileNameLog;
+                    destFile = @".\temp\" + fileNameLog;
 
 
                     File.Copy(fileName, destFile, true);
 
                     string[] trackId = fileNameLog.Split('_');
                     string temp = trackId[0];
-                    temp = temp.Replace("\\","");
+                    temp = temp.Replace("\\", "");
                     return temp;
 
                 }
@@ -40,6 +39,28 @@ namespace FastLogAnalyzer
             {
                 MessageBox.Show(" " + e.Message);
                 return "";
+            }
+
+        }
+        public bool Extract()
+        {
+            try
+            {
+                string zipPath = destFile;
+                string extractPath = @".\temp\";
+
+                using (ZipArchive archive = ZipFile.Open(zipPath, ZipArchiveMode.Update))
+                {
+                    // archive.CreateEntryFromFile(NewFile, "NewEntry.txt");
+                    archive.ExtractToDirectory(extractPath);
+                }
+
+                return true;
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show(" " + e.Message);
+                return false;
             }
         }
     }

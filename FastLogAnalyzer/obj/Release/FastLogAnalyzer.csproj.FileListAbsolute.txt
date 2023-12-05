@@ -8,3 +8,5 @@ C:\Projetos\FastLogAnalyzer\FastLogAnalyzer\obj\Release\FastLogAnalyzer.csproj.G
 C:\Projetos\FastLogAnalyzer\FastLogAnalyzer\obj\Release\FastLogAnalyzer.csproj.CoreCompileInputs.cache
 C:\Projetos\FastLogAnalyzer\FastLogAnalyzer\obj\Release\FastLogAnalyzer.exe
 C:\Projetos\FastLogAnalyzer\FastLogAnalyzer\obj\Release\FastLogAnalyzer.pdb
+C:\Projetos\FastLogAnalyzer\FastLogAnalyzer\bin\Release\System.IO.Compression.dll
+C:\Projetos\FastLogAnalyzer\FastLogAnalyzer\obj\Release\FastLogAnalyzer.csproj.CopyComplete

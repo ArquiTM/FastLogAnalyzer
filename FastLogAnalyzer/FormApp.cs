@@ -11,7 +11,7 @@ namespace FastLogAnalyzer
     public partial class FormApp : Form
     {
         private static FormApp INSTANCE = null;
-        OpenLog OL;
+        SelectLog SL;
 
 
         public FormApp()
@@ -20,16 +20,15 @@ namespace FastLogAnalyzer
             INSTANCE = this;
             createDirectory();
             ClassesInit();
-
-
         }
         private void createDirectory()
         {
-            Directory.CreateDirectory("temp");
+            if (!Directory.Exists("temp"))
+                Directory.CreateDirectory("temp");
         }
         private void ClassesInit()
         {
-            OL = new OpenLog();
+            SL = new SelectLog();
         }
         public static FormApp getInstance()
         {
@@ -41,8 +40,10 @@ namespace FastLogAnalyzer
 
         private void buttonSelectLog_Click(object sender, EventArgs e)
         {
-            labelTrackIdNumber.Text = OL.selectingLog();
-            textBoxStatus.Text = "File Imported Successfully!!!";
+            labelTrackIdNumber.Text = SL.SelectingLog();
+
+            if (SL.Extract())
+                textBoxStatus.Text = "File Imported Successfully!!!";
         }
     }
 }
