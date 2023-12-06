@@ -41,6 +41,8 @@
             this.textBoxStatus = new System.Windows.Forms.TextBox();
             this.labelTrackId = new System.Windows.Forms.Label();
             this.labelTrackIdNumber = new System.Windows.Forms.Label();
+            this.labelFail = new System.Windows.Forms.Label();
+            this.textBoxFail = new System.Windows.Forms.TextBox();
             this.groupBoxSelectLog.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -61,6 +63,7 @@
             // 
             // buttonUpdate
             // 
+            this.buttonUpdate.Enabled = false;
             this.buttonUpdate.Location = new System.Drawing.Point(154, 128);
             this.buttonUpdate.Name = "buttonUpdate";
             this.buttonUpdate.Size = new System.Drawing.Size(75, 23);
@@ -80,6 +83,7 @@
             // 
             // comboBoxFails
             // 
+            this.comboBoxFails.BackColor = System.Drawing.Color.White;
             this.comboBoxFails.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBoxFails.Enabled = false;
             this.comboBoxFails.FormattingEnabled = true;
@@ -99,13 +103,17 @@
             // 
             // textBoxNRows
             // 
+            this.textBoxNRows.BackColor = System.Drawing.Color.White;
             this.textBoxNRows.Location = new System.Drawing.Point(6, 101);
             this.textBoxNRows.Name = "textBoxNRows";
             this.textBoxNRows.Size = new System.Drawing.Size(62, 20);
             this.textBoxNRows.TabIndex = 1;
+            this.textBoxNRows.Text = "20";
+            this.textBoxNRows.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // textBoxAddressLog
             // 
+            this.textBoxAddressLog.BackColor = System.Drawing.Color.White;
             this.textBoxAddressLog.Location = new System.Drawing.Point(6, 33);
             this.textBoxAddressLog.Name = "textBoxAddressLog";
             this.textBoxAddressLog.ReadOnly = true;
@@ -125,10 +133,13 @@
             // 
             // textBox1
             // 
+            this.textBox1.AllowDrop = true;
+            this.textBox1.BackColor = System.Drawing.Color.White;
             this.textBox1.Location = new System.Drawing.Point(258, 88);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
             this.textBox1.ReadOnly = true;
+            this.textBox1.ScrollBars = System.Windows.Forms.ScrollBars.Both;
             this.textBox1.Size = new System.Drawing.Size(883, 466);
             this.textBox1.TabIndex = 2;
             // 
@@ -138,6 +149,7 @@
             // 
             // textBoxStatus
             // 
+            this.textBoxStatus.BackColor = System.Drawing.Color.White;
             this.textBoxStatus.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBoxStatus.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxStatus.Location = new System.Drawing.Point(23, 283);
@@ -167,12 +179,35 @@
             this.labelTrackIdNumber.Size = new System.Drawing.Size(0, 20);
             this.labelTrackIdNumber.TabIndex = 5;
             // 
+            // labelFail
+            // 
+            this.labelFail.AutoSize = true;
+            this.labelFail.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.labelFail.Location = new System.Drawing.Point(25, 454);
+            this.labelFail.Name = "labelFail";
+            this.labelFail.Size = new System.Drawing.Size(38, 20);
+            this.labelFail.TabIndex = 6;
+            this.labelFail.Text = "Fail:";
+            // 
+            // textBoxFail
+            // 
+            this.textBoxFail.BackColor = System.Drawing.Color.White;
+            this.textBoxFail.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.textBoxFail.Location = new System.Drawing.Point(69, 451);
+            this.textBoxFail.Multiline = true;
+            this.textBoxFail.Name = "textBoxFail";
+            this.textBoxFail.ReadOnly = true;
+            this.textBoxFail.Size = new System.Drawing.Size(177, 103);
+            this.textBoxFail.TabIndex = 7;
+            // 
             // FormApp
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1153, 566);
+            this.Controls.Add(this.textBoxFail);
+            this.Controls.Add(this.labelFail);
             this.Controls.Add(this.labelTrackIdNumber);
             this.Controls.Add(this.labelTrackId);
             this.Controls.Add(this.textBoxStatus);
@@ -203,6 +238,8 @@
         private System.Windows.Forms.TextBox textBoxStatus;
         private System.Windows.Forms.Label labelTrackId;
         private System.Windows.Forms.Label labelTrackIdNumber;
+        private System.Windows.Forms.Label labelFail;
+        public System.Windows.Forms.TextBox textBoxFail;
     }
 }
 

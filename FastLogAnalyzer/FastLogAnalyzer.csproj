@@ -56,7 +56,7 @@
     <Compile Include="FormApp.Designer.cs">
       <DependentUpon>FormApp.cs</DependentUpon>
     </Compile>
-    <Compile Include="OpenLogInExcel.cs" />
+    <Compile Include="ReadLog.cs" />
     <Compile Include="SelectLog.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

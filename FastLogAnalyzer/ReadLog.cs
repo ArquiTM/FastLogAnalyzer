@@ -5,13 +5,12 @@ using System.Windows.Forms;
 
 namespace FastLogAnalyzer
 {
-    class OpenLogInExcel
+    class ReadLog
     {
         public void FileToVet(string strFilePath)
         {
             int countRow = 0;
             string line = string.Empty;
-
 
             using (var reader = new StreamReader(strFilePath))
             {
@@ -19,7 +18,7 @@ namespace FastLogAnalyzer
                 countRow = strFilePath.Length;
                 string[] vet = new string[countRow];
 
-                //while ((reader.ReadLine()) != null)
+               // while ((reader.ReadLine()) != null)
                 //{
                 //    countRow++;
                 //}
@@ -28,7 +27,6 @@ namespace FastLogAnalyzer
                 //{
                 while ((line = reader.ReadLine()) != null && i < countRow)
                 {
-
                     line = reader.ReadLine();
                     vet[i] = line;
                     i++;
