@@ -43,7 +43,7 @@ namespace FastLogAnalyzer
             if (labelTrackIdNumber.Text != "" && SL.Extract(response))
             {
                 textBoxStatus.Text = "File Imported Successfully!!!";
-               // SL.AddingReaderToLog(response);
+                // SL.AddingReaderToLog(response);
                 reader(response);
             }
 
@@ -60,9 +60,9 @@ namespace FastLogAnalyzer
                 if (!f.Contains("startup") && f.Contains(".log"))
                     filePath = f;
             }
-             string logTemp = SL.AddingReaderToLog(filePath);
+            string logTemp = SL.AddingReaderToLog(filePath);
 
-           RL.ConvertToDataTable(logTemp);
+            RL.FillingComboBox(logTemp);
         }
     }
 }

@@ -1,61 +1,24 @@
-﻿using System;
-using System.Data;
-using System.IO;
-using System.Windows.Forms;
-
+﻿using System.IO;
 namespace FastLogAnalyzer
 {
     class ReadLog
     {
         FormApp frmMain = FormApp.getInstance();
 
-        /* public void FileToVet(string strFilePath)
-         {
-             int countRow = 0;
-             string line = string.Empty;
-
-             using (var reader = new StreamReader(strFilePath))
-             {
-                 int i = 0;
-                 countRow = strFilePath.Length;
-                 string[] vet = new string[countRow];
-                 while ((line = reader.ReadLine()) != null && i < countRow)
-                 {
-                     line = reader.ReadLine();
-                     vet[i] = line;
-                     i++;
-                 }
-                 for (int j = 0; j < vet.Length; j++)
-                 {
-                     if (vet[j].Contains("* FAILED *"))
-                         frmMain.comboBoxFails.
-                  }
-             }
-
-         }*/
-
-        public DataTable ConvertToDataTable(string strFilePath)
+        public void FillingComboBox(string filePath)
         {
-            DataTable dt = new DataTable();
-            using (StreamReader sr = new StreamReader(strFilePath))
+            string line = string.Empty;
+            using (var reader = new StreamReader(filePath))
             {
-                string[] headers = sr.ReadLine().Split('\t');
-                foreach (string header in headers)
+                while ((line = reader.ReadLine()) != null)
                 {
-                    dt.Columns.Add(header);
-                }
-                while (!sr.EndOfStream)
-                {
-                    string[] rows = sr.ReadLine().Split('\t');
-                    DataRow dr = dt.NewRow();
-                    for (int i = 0; i < headers.Length; i++)
+                    if (line.Contains("* FAILED *"))
                     {
-                        dr[i] = rows[i];
+                        string[] error = line.Split('\t');
+                        frmMain.comboBoxFails.Items.Add(error[9]);
                     }
-                    dt.Rows.Add(dr);
                 }
             }
-            return dt;
         }
     }
 }
