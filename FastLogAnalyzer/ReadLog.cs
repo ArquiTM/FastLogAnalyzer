@@ -7,32 +7,55 @@ namespace FastLogAnalyzer
 {
     class ReadLog
     {
-        public void FileToVet(string strFilePath)
+        FormApp frmMain = FormApp.getInstance();
+
+        /* public void FileToVet(string strFilePath)
+         {
+             int countRow = 0;
+             string line = string.Empty;
+
+             using (var reader = new StreamReader(strFilePath))
+             {
+                 int i = 0;
+                 countRow = strFilePath.Length;
+                 string[] vet = new string[countRow];
+                 while ((line = reader.ReadLine()) != null && i < countRow)
+                 {
+                     line = reader.ReadLine();
+                     vet[i] = line;
+                     i++;
+                 }
+                 for (int j = 0; j < vet.Length; j++)
+                 {
+                     if (vet[j].Contains("* FAILED *"))
+                         frmMain.comboBoxFails.
+                  }
+             }
+
+         }*/
+
+        public DataTable ConvertToDataTable(string strFilePath)
         {
-            int countRow = 0;
-            string line = string.Empty;
-
-            using (var reader = new StreamReader(strFilePath))
+            DataTable dt = new DataTable();
+            using (StreamReader sr = new StreamReader(strFilePath))
             {
-                int i = 0;
-                countRow = strFilePath.Length;
-                string[] vet = new string[countRow];
-
-               // while ((reader.ReadLine()) != null)
-                //{
-                //    countRow++;
-                //}
-
-                // for (int i = 0; i < countRow; i++)
-                //{
-                while ((line = reader.ReadLine()) != null && i < countRow)
+                string[] headers = sr.ReadLine().Split('\t');
+                foreach (string header in headers)
                 {
-                    line = reader.ReadLine();
-                    vet[i] = line;
-                    i++;
-                    // line = reader.ReadLine();
+                    dt.Columns.Add(header);
+                }
+                while (!sr.EndOfStream)
+                {
+                    string[] rows = sr.ReadLine().Split('\t');
+                    DataRow dr = dt.NewRow();
+                    for (int i = 0; i < headers.Length; i++)
+                    {
+                        dr[i] = rows[i];
+                    }
+                    dt.Rows.Add(dr);
                 }
             }
+            return dt;
         }
     }
 }

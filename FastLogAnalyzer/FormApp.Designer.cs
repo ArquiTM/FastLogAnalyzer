@@ -228,7 +228,6 @@
         private System.Windows.Forms.GroupBox groupBoxSelectLog;
         private System.Windows.Forms.Button buttonUpdate;
         private System.Windows.Forms.Button buttonSelectLog;
-        private System.Windows.Forms.ComboBox comboBoxFails;
         private System.Windows.Forms.Label labelRow;
         private System.Windows.Forms.TextBox textBoxNRows;
         private System.Windows.Forms.Label label1;
@@ -240,6 +239,7 @@
         private System.Windows.Forms.Label labelTrackIdNumber;
         private System.Windows.Forms.Label labelFail;
         public System.Windows.Forms.TextBox textBoxFail;
+        public System.Windows.Forms.ComboBox comboBoxFails;
     }
 }
 
