@@ -10,7 +10,6 @@ namespace FastLogAnalyzer
         int rows = 1;
         public void FillingComboBox(string filePath)
         {
-
             string line = string.Empty;
             using (var reader = new StreamReader(filePath))
             {
@@ -28,29 +27,42 @@ namespace FastLogAnalyzer
 
         public void ShowErrorOnTextBox(string filePath)
         {
-            string[] line = new string[rows];
-            int i = 0;
-            int rowsTx = int.Parse(frmMain.textBoxNRows.Text);
-
-            using (var reader = new StreamReader(filePath))
+            try
             {
-                while ((line[i] = reader.ReadLine()) != null && frmMain.textBoxResult.Text == "")
+                string[] line = new string[rows];
+                int i = 0;
+                int rowsTx = int.Parse(frmMain.textBoxNRows.Text);
+
+                using (var reader = new StreamReader(filePath))
                 {
-                    if (line[i].Contains(frmMain.comboBoxFails.Text))
+                    while ((line[i] = reader.ReadLine()) != null && frmMain.textBoxResult.Text == "")
                     {
-
-                        int startRow = i - rowsTx;
-
-                        for (int j = startRow; j <= i; j++)
+                        if (line[i].Contains(frmMain.comboBoxFails.Text))
                         {
-                            //  string[] newLine = new string;
+                            i++;
+                            line[i] = reader.ReadLine();
+                            int startRow = i - rowsTx - 1;
 
-                            frmMain.textBoxResult.Text += line[j].Substring(36) + Environment.NewLine;
-                            Application.DoEvents();
+                            for (int j = startRow; j <= i; j++)
+                            {
+                                string[] newLine = line[j].Split('\t');
+
+                                for (int y = 0; y < 5; y++)
+                                {
+                                    line[j] = line[j].Replace("\t\t", "\t");
+                                    line[j] = line[j].Replace(newLine[y] + '\t', "");
+                                }
+                                frmMain.textBoxResult.Text += line[j] + Environment.NewLine;
+                                Application.DoEvents();
+                            }
                         }
+                        i++;
                     }
-                    i++;
                 }
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show("Error ShowErrorOnTextBox() method: " + e.Message);
             }
         }
     }

@@ -20,6 +20,7 @@ namespace FastLogAnalyzer
                 if (frmMain.openFileDialog1.ShowDialog() == DialogResult.OK)
                 {
                     frmMain.comboBoxFails.Items.Clear();
+                    frmMain.textBoxResult.Text = "";
                     DateTime dt = DateTime.Now;
                     string hour = dt.ToString("dd-MM-yy-HH_mm_ss");
 

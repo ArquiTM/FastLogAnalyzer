@@ -61,7 +61,6 @@ namespace FastLogAnalyzer
                     filePath = f;
             }
             logTemp = SL.AddingReaderToLog(filePath);
-
             RL.FillingComboBox(logTemp);
         }
 
