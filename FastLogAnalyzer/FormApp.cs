@@ -9,6 +9,7 @@ namespace FastLogAnalyzer
         private static FormApp INSTANCE = null;
         SelectLog SL;
         ReadLog RL;
+        string logTemp = string.Empty;
 
         public FormApp()
         {
@@ -42,9 +43,7 @@ namespace FastLogAnalyzer
 
             if (labelTrackIdNumber.Text != "" && SL.Extract(response))
             {
-                // textBoxStatus.Text = Environment.NewLine
                 textBoxStatus.Text = Environment.NewLine + "File Imported Successfully!!!";
-                // SL.AddingReaderToLog(response);
                 reader(response);
             }
 
@@ -61,9 +60,15 @@ namespace FastLogAnalyzer
                 if (!f.Contains("startup") && f.Contains(".log"))
                     filePath = f;
             }
-            string logTemp = SL.AddingReaderToLog(filePath);
+            logTemp = SL.AddingReaderToLog(filePath);
 
             RL.FillingComboBox(logTemp);
+        }
+
+        private void comboBoxFails_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            textBoxResult.Text = "";
+            RL.ShowErrorOnTextBox(logTemp);
         }
     }
 }

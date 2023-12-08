@@ -19,6 +19,7 @@ namespace FastLogAnalyzer
                 frmMain.openFileDialog1.Filter = "All files (*.*)|*.*";
                 if (frmMain.openFileDialog1.ShowDialog() == DialogResult.OK)
                 {
+                    frmMain.comboBoxFails.Items.Clear();
                     DateTime dt = DateTime.Now;
                     string hour = dt.ToString("dd-MM-yy-HH_mm_ss");
 

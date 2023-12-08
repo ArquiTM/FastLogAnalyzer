@@ -29,6 +29,8 @@
         private void InitializeComponent()
         {
             this.groupBoxSelectLog = new System.Windows.Forms.GroupBox();
+            this.labelAddress = new System.Windows.Forms.Label();
+            this.labelFails = new System.Windows.Forms.Label();
             this.buttonUpdate = new System.Windows.Forms.Button();
             this.buttonSelectLog = new System.Windows.Forms.Button();
             this.comboBoxFails = new System.Windows.Forms.ComboBox();
@@ -36,7 +38,7 @@
             this.textBoxNRows = new System.Windows.Forms.TextBox();
             this.textBoxAddressLog = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textBoxResult = new System.Windows.Forms.TextBox();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.textBoxStatus = new System.Windows.Forms.TextBox();
             this.labelTrackId = new System.Windows.Forms.Label();
@@ -44,8 +46,6 @@
             this.labelFail = new System.Windows.Forms.Label();
             this.textBoxFail = new System.Windows.Forms.TextBox();
             this.labelStatus = new System.Windows.Forms.Label();
-            this.labelFails = new System.Windows.Forms.Label();
-            this.labelAddress = new System.Windows.Forms.Label();
             this.groupBoxSelectLog.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -65,6 +65,26 @@
             this.groupBoxSelectLog.TabIndex = 0;
             this.groupBoxSelectLog.TabStop = false;
             this.groupBoxSelectLog.Text = "SelectLog";
+            // 
+            // labelAddress
+            // 
+            this.labelAddress.AutoSize = true;
+            this.labelAddress.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelAddress.Location = new System.Drawing.Point(3, 16);
+            this.labelAddress.Name = "labelAddress";
+            this.labelAddress.Size = new System.Drawing.Size(96, 16);
+            this.labelAddress.TabIndex = 7;
+            this.labelAddress.Text = "Select the Log:";
+            // 
+            // labelFails
+            // 
+            this.labelFails.AutoSize = true;
+            this.labelFails.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelFails.Location = new System.Drawing.Point(3, 67);
+            this.labelFails.Name = "labelFails";
+            this.labelFails.Size = new System.Drawing.Size(59, 16);
+            this.labelFails.TabIndex = 6;
+            this.labelFails.Text = "Failures:";
             // 
             // buttonUpdate
             // 
@@ -97,6 +117,7 @@
             this.comboBoxFails.Name = "comboBoxFails";
             this.comboBoxFails.Size = new System.Drawing.Size(238, 21);
             this.comboBoxFails.TabIndex = 3;
+            this.comboBoxFails.SelectedIndexChanged += new System.EventHandler(this.comboBoxFails_SelectedIndexChanged);
             // 
             // labelRow
             // 
@@ -139,17 +160,17 @@
             this.label1.TabIndex = 1;
             this.label1.Text = "Fast Log Analyzer";
             // 
-            // textBox1
+            // textBoxResult
             // 
-            this.textBox1.AllowDrop = true;
-            this.textBox1.BackColor = System.Drawing.Color.White;
-            this.textBox1.Location = new System.Drawing.Point(258, 88);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.ReadOnly = true;
-            this.textBox1.ScrollBars = System.Windows.Forms.ScrollBars.Both;
-            this.textBox1.Size = new System.Drawing.Size(883, 466);
-            this.textBox1.TabIndex = 2;
+            this.textBoxResult.BackColor = System.Drawing.Color.White;
+            this.textBoxResult.Location = new System.Drawing.Point(258, 88);
+            this.textBoxResult.Multiline = true;
+            this.textBoxResult.Name = "textBoxResult";
+            this.textBoxResult.ReadOnly = true;
+            this.textBoxResult.ScrollBars = System.Windows.Forms.ScrollBars.Both;
+            this.textBoxResult.Size = new System.Drawing.Size(883, 466);
+            this.textBoxResult.TabIndex = 2;
+            this.textBoxResult.WordWrap = false;
             // 
             // openFileDialog1
             // 
@@ -160,11 +181,11 @@
             this.textBoxStatus.BackColor = System.Drawing.Color.White;
             this.textBoxStatus.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBoxStatus.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxStatus.Location = new System.Drawing.Point(8, 462);
+            this.textBoxStatus.Location = new System.Drawing.Point(8, 474);
             this.textBoxStatus.Multiline = true;
             this.textBoxStatus.Name = "textBoxStatus";
             this.textBoxStatus.ReadOnly = true;
-            this.textBoxStatus.Size = new System.Drawing.Size(244, 92);
+            this.textBoxStatus.Size = new System.Drawing.Size(244, 80);
             this.textBoxStatus.TabIndex = 3;
             this.textBoxStatus.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -212,31 +233,11 @@
             // 
             this.labelStatus.AutoSize = true;
             this.labelStatus.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelStatus.Location = new System.Drawing.Point(4, 439);
+            this.labelStatus.Location = new System.Drawing.Point(4, 451);
             this.labelStatus.Name = "labelStatus";
             this.labelStatus.Size = new System.Drawing.Size(60, 20);
             this.labelStatus.TabIndex = 8;
             this.labelStatus.Text = "Status:";
-            // 
-            // labelFails
-            // 
-            this.labelFails.AutoSize = true;
-            this.labelFails.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelFails.Location = new System.Drawing.Point(3, 67);
-            this.labelFails.Name = "labelFails";
-            this.labelFails.Size = new System.Drawing.Size(59, 16);
-            this.labelFails.TabIndex = 6;
-            this.labelFails.Text = "Failures:";
-            // 
-            // labelAddress
-            // 
-            this.labelAddress.AutoSize = true;
-            this.labelAddress.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelAddress.Location = new System.Drawing.Point(3, 16);
-            this.labelAddress.Name = "labelAddress";
-            this.labelAddress.Size = new System.Drawing.Size(96, 16);
-            this.labelAddress.TabIndex = 7;
-            this.labelAddress.Text = "Select the Log:";
             // 
             // FormApp
             // 
@@ -250,7 +251,7 @@
             this.Controls.Add(this.labelTrackIdNumber);
             this.Controls.Add(this.labelTrackId);
             this.Controls.Add(this.textBoxStatus);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.textBoxResult);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.groupBoxSelectLog);
             this.Name = "FormApp";
@@ -268,9 +269,7 @@
         private System.Windows.Forms.Button buttonUpdate;
         private System.Windows.Forms.Button buttonSelectLog;
         private System.Windows.Forms.Label labelRow;
-        private System.Windows.Forms.TextBox textBoxNRows;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox1;
         public System.Windows.Forms.OpenFileDialog openFileDialog1;
         public System.Windows.Forms.TextBox textBoxAddressLog;
         private System.Windows.Forms.TextBox textBoxStatus;
@@ -282,6 +281,8 @@
         private System.Windows.Forms.Label labelFails;
         private System.Windows.Forms.Label labelStatus;
         private System.Windows.Forms.Label labelAddress;
+        public System.Windows.Forms.TextBox textBoxNRows;
+        public System.Windows.Forms.TextBox textBoxResult;
     }
 }
 
