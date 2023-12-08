@@ -1,0 +1,158 @@
+1	2	3	4	5	6	7	8	9	10	11	12	13	14	15	16	17	18	19	20	21	22	23
+2023-12-07 15:25:03,043	 []	 INFO 	 TEST_APP_2010	15:25:03.0438646	Simple Phone ID Reader	FileManager	Waiting for file process 'AutoSaveLog' to finish...
+2023-12-07 15:25:03,043	 []	 INFO 	 TEST_APP_2010	15:25:03.0438646	Simple Phone ID Reader	FileManager	File process 'AutoSaveLog' is finished.
+2023-12-07 15:25:03,043	 []	 INFO 	 ID_READER	15:25:03.0438646		GetID	Unit track ID '0085544330' is now available.
+2023-12-07 15:25:03,043	 []	 INFO 	 ID_READER	15:25:03.0438646	Simple Phone ID Reader	WorkerThreadReaderFunction	ID reader is now idle waiting for request to resume scanning for another unit...
+2023-12-07 15:25:03,043	 []	 INFO 	 CustomerDataProcessor	15:25:03.0438646		Engine	ID reader returned unit track ID of '0085544330'.
+2023-12-07 15:25:03,043	 []	 INFO 	 CustomerDataProcessor	15:25:03.0438646		Engine	Requesting Customer Data For : [0085544330]
+2023-12-07 15:25:03,043	 []	 INFO 	 CustomerDataProcessor	15:25:03.0438646		Engine	Retrieving unit data from customer database.
+2023-12-07 15:25:03,043	 []	 INFO 	 DATA_COLLECTOR	15:25:03.0438646		Engine	Getting unit model information...
+2023-12-07 15:25:03,043	 []	 INFO 	 DATA_COLLECTOR	15:25:03.0438646		Engine	Hardware information selector: 'CAlternateLibertyvilleHardwareInfo'
+2023-12-07 15:25:03,063	 []	 INFO 	 ModelDataManager	15:25:03.0638649		Load	Checking if model data memory contents needs to be refreshed from model file...Last modified timestamp of the model file when it was loaded is '2023/12/02 10:09:49' and the last modified timestamp of the model file now is '2023/12/02 10:09:49'.
+2023-12-07 15:25:03,063	 []	 INFO 	 ModelDataManager	15:25:03.0638649		Load	Model file has NOT been updated since it was last loaded; so model data does NOT require to be refreshed.
+2023-12-07 15:25:03,063	 []	 INFO 	 DATA_COLLECTOR	15:25:03.0638649		Engine	Calling UnitDataTransactionHandler to get unit data for [0085544330]
+2023-12-07 15:25:03,063	 []	 INFO 	 BusinessSystemDataManager	15:25:03.0638649		UnitDataTransactionHandler	Collecting unit data for track ID '0085544330': Transaction type = 'FLXFL' | URL = 'http://10.114.90.79/FF_Http_AutoTester/default.aspx'
+2023-12-07 15:25:03,063	 []	 INFO 	 BusinessSystemDataManager	15:25:03.0638649		CollectUnitModelInfo	BusinessSystemDataConnector name= 'FLXFL'. reset global variable.
+2023-12-07 15:25:03,063	 []	 INFO 	 BusinessSystemDataManager	15:25:03.0638649		CollectUnitModelInfo	Collect unit model info request for track Id '0085544330'.  Number of retries allowed = 2.  Timeout = 20000msec.
+2023-12-07 15:25:03,073	 []	 INFO 	 BusinessSystemDataManager	15:25:03.0738643		ProcessPostRequest	Request URL: 'http://10.114.90.79/FF_Http_AutoTester/default.aspx'
+2023-12-07 15:25:03,073	 []	 INFO 	 BusinessSystemDataManager	15:25:03.0738643		ProcessPostRequest	Request timeout: 20000msec
+2023-12-07 15:25:03,073	 []	 INFO 	 BusinessSystemDataManager	15:25:03.0738643		ProcessPostRequest	Request data sending to server: cmd=QUERY&wip_no=0085544330&station_type=BRDTEST&station_code=ME06-PB01F1T06-BT008A&test_machine_id=2C:F0:5D:51:26:A7&p=permission&p=sfc_error_msg&p=fvc_num&p=order_num&p=front_end_pn&p=back_end_pn&p=wip_no&p=battery_pn&p=subassembly_id&p=keypart_xb
+2023-12-07 15:25:03,093	 []	 INFO 	 BusinessSystemDataManager	15:25:03.0938645		ProcessPostRequest	Getting the web service request stream...
+2023-12-07 15:25:03,103	 []	 INFO 	 BusinessSystemDataManager	15:25:03.1038641		ProcessPostRequest	Successfully got the web service request stream.
+2023-12-07 15:25:03,103	 []	 INFO 	 BusinessSystemDataManager	15:25:03.1038641		ProcessPostRequest	Writing the data to the web service request stream...
+2023-12-07 15:25:03,103	 []	 INFO 	 BusinessSystemDataManager	15:25:03.1038641		ProcessPostRequest	Successfully wrote the data to the web service request stream.
+2023-12-07 15:25:03,103	 []	 INFO 	 BusinessSystemDataManager	15:25:03.1038641		ProcessPostRequest	Reading the web service response...
+2023-12-07 15:25:03,113	 []	 INFO 	 BusinessSystemDataManager	15:25:03.1138642		ProcessPostRequest	Successfully read the web service response.
+2023-12-07 15:25:03,113	 []	 INFO 	 BusinessSystemDataManager	15:25:03.1138642		ProcessPostRequest	Status from server: OK
+2023-12-07 15:25:03,113	 []	 INFO 	 BusinessSystemDataManager	15:25:03.1138642		ProcessPostRequest	Response data from server: 0 PSC_OK
+2023-12-07 15:25:03,113	 []	 INFO 	 BusinessSystemDataManager	15:25:03.1138642		ProcessPostRequest	cmd=QUERY
+2023-12-07 15:25:03,113	 []	 INFO 	 BusinessSystemDataManager	15:25:03.1138642		ProcessPostRequest	wip_no=0085544330
+2023-12-07 15:25:03,113	 []	 INFO 	 BusinessSystemDataManager	15:25:03.1138642		ProcessPostRequest	permission=1
+2023-12-07 15:25:03,113	 []	 INFO 	 BusinessSystemDataManager	15:25:03.1138642		ProcessPostRequest	sfc_error_msg=Unidade com TBA [udpNexTestHttpProcessQuery]
+2023-12-07 15:25:03,113	 []	 INFO 	 BusinessSystemDataManager	15:25:03.1138642		ProcessPostRequest	order_num=77044591
+2023-12-07 15:25:03,113	 []	 INFO 	 BusinessSystemDataManager	15:25:03.1138642		ProcessPostRequest	front_end_pn=
+2023-12-07 15:25:03,113	 []	 INFO 	 BusinessSystemDataManager	15:25:03.1138642		ProcessPostRequest	back_end_pn=
+2023-12-07 15:25:03,113	 []	 INFO 	 BusinessSystemDataManager	15:25:03.1138642		ProcessPostRequest	cfc_pn=
+2023-12-07 15:25:03,113	 []	 INFO 	 BusinessSystemDataManager	15:25:03.1138642		ProcessPostRequest	fvc_num=
+2023-12-07 15:25:03,113	 []	 INFO 	 BusinessSystemDataManager	15:25:03.1138642		ProcessPostRequest	fac_svn=
+2023-12-07 15:25:03,113	 []	 INFO 	 BusinessSystemDataManager	15:25:03.1138642		ProcessPostRequest	cfc_svn=
+2023-12-07 15:25:03,113	 []	 INFO 	 BusinessSystemDataManager	15:25:03.1138642		ProcessPostRequest	battery_pn=
+2023-12-07 15:25:03,113	 []	 INFO 	 BusinessSystemDataManager	15:25:03.1138642		ProcessPostRequest	subassysn=
+2023-12-07 15:25:03,113	 []	 INFO 	 BusinessSystemDataManager	15:25:03.1138642		ProcessPostRequest	Time to complete request: 45 milliseconds
+2023-12-07 15:25:03,113	 []	 INFO 	 BusinessSystemDataManager	15:25:03.1138642		CollectUnitModelInfo	boardKitNumber = 
+2023-12-07 15:25:03,113	 []	 INFO 	 BusinessSystemDataManager	15:25:03.1138642		CollectUnitModelInfo	xcvrNumber = 
+2023-12-07 15:25:03,113	 []	 INFO 	 BusinessSystemDataManager	15:25:03.1138642		CollectUnitModelInfo	factorySvn = 
+2023-12-07 15:25:03,113	 []	 INFO 	 BusinessSystemDataManager	15:25:03.1138642		CollectUnitModelInfo	orderNumber = 77044591
+2023-12-07 15:25:03,113	 []	 INFO 	 BusinessSystemDataManager	15:25:03.1138642		CollectUnitModelInfo	fvc = 
+2023-12-07 15:25:03,113	 []	 INFO 	 BusinessSystemDataManager	15:25:03.1138642		CollectUnitModelInfo	batteryInfo = 
+2023-12-07 15:25:03,113	 []	 INFO 	 BusinessSystemDataManager	15:25:03.1138642		CollectUnitModelInfo	subAssemblyID = 
+2023-12-07 15:25:03,113	 []	 INFO 	 BusinessSystemDataManager	15:25:03.1138642		CollectUnitModelInfo	subpcbID = 
+2023-12-07 15:25:03,113	 []	 INFO 	 BusinessSystemDataManager	15:25:03.1138642		CollectUnitModelInfo	routeReassignRequired = 
+2023-12-07 15:25:03,113	 []	 INFO 	 BusinessSystemDataManager	15:25:03.1138642		CollectUnitModelInfo	TrackIdInSystem = 0085544330
+2023-12-07 15:25:03,113	 []	 ERROR	 BusinessSystemDataManager	15:25:03.1138642		CollectUnitModelInfo	Collect unit model info failed: Unidade com TBA [udpNexTestHttpProcessQuery]
+2023-12-07 15:25:03,113	 []	 ERROR	 BusinessSystemDataManager	15:25:03.1138642		UnitDataTransactionHandler	FLXFL error collecting unit data for track ID '0085544330': Retrieve error message from BusinessSystemDataConnectorManager.LastErrorMessage
+2023-12-07 15:25:03,113	 []	 INFO 	 DATA_COLLECTOR	15:25:03.1138642		Engine	Copy NexTest2010 marshalling parameters to local variables.
+2023-12-07 15:25:03,113	 []	 INFO 	 DATA_COLLECTOR	15:25:03.1138642		Engine	Freeing up NexTest2010 marshalling memory.
+2023-12-07 15:25:03,113	 []	 INFO 	 DATA_COLLECTOR	15:25:03.1138642		Engine	UnitDataTransactionHandler error: FLXFL error collecting unit data for track ID '0085544330': Retrieve error message from BusinessSystemDataConnectorManager.LastErrorMessage
+2023-12-07 15:25:03,113	 []	 INFO 	 CustomerDataProcessor	15:25:03.1138642		Engine	Setting item list item TRACKING_ID = '0085544330'.
+2023-12-07 15:25:03,113	 []	 INFO 	 CustomerDataProcessor	15:25:03.1138642		Engine	Setting item list item SITE = 'BZ'.
+2023-12-07 15:25:03,113	 []	 INFO 	 CustomerDataProcessor	15:25:03.1138642		Engine	Setting item list item UNIT_ID = '0085544330'.
+2023-12-07 15:25:03,113	 []	 INFO 	 CustomerDataProcessor	15:25:03.1138642		Engine	 
+2023-12-07 15:25:03,113	 []	 INFO 	 CustomerDataProcessor	15:25:03.1138642		Engine	Error!!! No shop order file found for the unit
+2023-12-07 15:25:03,113	 []	 INFO 	 CustomerDataProcessor	15:25:03.1138642		Engine	 
+2023-12-07 15:25:03,113	 []	 INFO 	 CustomerDataProcessor	15:25:03.1138642		Engine	Error!!! No Data Found in Model File
+2023-12-07 15:25:03,113	 []	 INFO 	 CustomerDataProcessor	15:25:03.1138642		Engine	 
+2023-12-07 15:25:03,113	 []	 INFO 	 CustomerDataProcessor	15:25:03.1138642		Engine	  Warning!!!, Customer Data Base Unable Retreive Data For : [0085544330]
+2023-12-07 15:25:03,113	 []	 INFO 	 CustomerDataProcessor	15:25:03.1138642		Engine	Completed retrieval of unit data from customer database.
+2023-12-07 15:25:03,113	 []	 INFO 	 CustomerDataProcessor	15:25:03.1138642		Engine	Setting unit data retrieved from customer database.
+2023-12-07 15:25:03,113	 []	 INFO 	 CustomerDataProcessor	15:25:03.1138642		Engine	   Esn For UnitId [0085544330] is [No Data Found]
+2023-12-07 15:25:03,113	 []	 INFO 	 CustomerDataProcessor	15:25:03.1138642		Engine	Setting unit recipe ID retrieved from customer database.
+2023-12-07 15:25:03,113	 []	 INFO 	 CustomerDataProcessor	15:25:03.1138642		Engine	Setting unit status as queued and ready to test.
+2023-12-07 15:25:03,113	 []	 INFO 	 SystemDataProcessor	15:25:03.1138642		Engine	Loading data to common data map..Please wait
+2023-12-07 15:25:03,113	 []	 INFO 	 SystemDataProcessor	15:25:03.1138642		Engine	Common Data Map Processing : 0085544330
+2023-12-07 15:25:03,113	 []	 INFO 	 SystemDataProcessor	15:25:03.1138642		Engine	   Common Data Map Reloading Test Recipe Information
+2023-12-07 15:25:03,113	 []	 INFO 	 SystemDataProcessor	15:25:03.1138642		Engine	      Common Data Map Reload Occurred On Id : 0085544330
+2023-12-07 15:25:03,113	 []	 INFO 	 SystemDataProcessor	15:25:03.1138642		Engine	   Common Data Map Deleting Old Sequencing Information
+2023-12-07 15:25:03,123	 []	 INFO 	 SystemDataProcessor	15:25:03.1238639		Engine	New Recipe Switch To : ERROR_RECIPE
+2023-12-07 15:25:03,123	 []	 INFO 	 SystemDataProcessor	15:25:03.1238639		Engine	   Common Data Map Collecting The Tests Now
+2023-12-07 15:25:03,133	 []	 INFO 	 SystemDataProcessor	15:25:03.1338632		Engine	   Common Data Map: Tests Collected
+2023-12-07 15:25:03,133	 []	 INFO 	 ENGINE	15:25:03.1338632		Engine	Processing Recipe For : 0085544330
+2023-12-07 15:25:03,133	 []	 INFO 	 SAMPLER	15:25:03.1338632		Engine	<CSamplerRecipe::AdjustTestToExecuteInRecipeBasedOnSamplingData>  Entering function - - - - - - - - (called from engine recipe processor)
+2023-12-07 15:25:03,133	 []	 INFO 	 SAMPLER	15:25:03.1338632		Engine	Remove sampler algorithms from previous test recipe...
+2023-12-07 15:25:03,133	 []	 INFO 	 SAMPLER	15:25:03.1338632		Engine	<CSamplerRecipe::AdjustTestToExecuteInRecipeBasedOnSamplingData>   Recipe has No Sampler Blocks
+2023-12-07 15:25:03,133	 []	 INFO 	 SAMPLER	15:25:03.1338632		Engine	<CSamplerRecipe::AdjustTestToExecuteInRecipeBasedOnSamplingData> Finished
+2023-12-07 15:25:03,243	 []	 INFO 	 ENGINE	15:25:03.2438655		Engine	Utilize Results Driver For PreProcessing Results
+2023-12-07 15:25:03,253	 []	 INFO 	 RECIPE_TEST_START	15:25:03.2538648			
+2023-12-07 15:25:03,253	 []	 INFO 	 TEST_APP_2010	15:25:03.2538648		RecipeStartHandler	Executing test recipe start handler...
+2023-12-07 15:25:03,253	 []	 INFO 	 TEST_APP_2010	15:25:03.2538648		RecipeStartHandler	Recipe: ERROR_RECIPE | TotalTests: 1
+2023-12-07 15:25:03,253	 []	 INFO 	 TEST_APP_2010	15:25:03.2538648		RecipeStartHandler	Product: No Data Found | ModelVer: No Data Found | BoardKit#: No Data Found | ModelKit#: No Data Found
+2023-12-07 15:25:03,253	 []	 INFO 	 TEST_APP_2010	15:25:03.2538648		FileManager	Waiting for file process 'SaveUnitTestRunResults' to finish...
+2023-12-07 15:25:03,253	 []	 INFO 	 TEST_APP_2010	15:25:03.2538648		FileManager	File process 'SaveUnitTestRunResults' is finished.
+2023-12-07 15:25:03,273	 []	 INFO 	 TEST_APP_2010	15:25:03.2738974		RecipeStartHandler	Getting all test specs in all sampling tests in the active test recipe 'ERROR_RECIPE' for SAMPLER equipment to use.
+2023-12-07 15:25:03,273	 []	 INFO 	 TEST_APP_2010	15:25:03.2738974		RecipeStartHandler	Getting all test specs for sampled test ''.
+2023-12-07 15:25:03,273	 []	 INFO 	 TEST_APP_2010	15:25:03.2738974		RecipeStartHandler	No sampling tests in this test recipe.
+2023-12-07 15:25:03,273	 []	 INFO 	 TEST_APP_2010	15:25:03.2738974		RecipeStartHandler	Finished getting all sampling test specs.
+2023-12-07 15:25:03,273	 []	 INFO 	 TEST_APP_2010	15:25:03.2738974		RecipeStartHandler	Completed test recipe start handler.
+2023-12-07 15:25:22,208	 []	 INFO 	 TEST_APP_2010	15:25:22.2080148		EvalAndLogResults	R#	M#	MeasureDescription	LowLimit	HighLimit	Result	Units	TestTime	RecipeTime	Status	Message	ResultPositionWithinLimits	SamplingStatus	OpenLimits	EnhancedLimits	MeasCode
+2023-12-07 15:25:22,208	 []	 INFO 	 TEST_APP_2010	15:25:22.2080148		EvalAndLogResults	0	1	TRACK_ID_ERROR	0	0	-9039961	P/F	18931	18956	* FAILED *	FLXFL error collecting unit data for track ID '0085544330': Unidade com TBA [udpNexTestHttpProcessQuery]	#<----------------------|----------------------->	Off	False	True	ERROR_ID
+2023-12-07 15:25:22,268	 []	 INFO 	 END_OF_TEST	15:25:22.2680144			
+2023-12-07 15:25:22,268	 []	 INFO 	 ENGINE	15:25:22.2680144		Engine	Executing callback function to NexTest2010 test app to indicate recipe is done.
+2023-12-07 15:25:22,268	 []	 INFO 	 TEST_APP_2010	15:25:22.2680144	TestRecipeDoneHandler	Header	==========================================================================================================================================================================
+2023-12-07 15:25:22,268	 []	 INFO 	 TEST_APP_2010	15:25:22.2680144	TestRecipeDoneHandler	Header	Test = TestRecipeDoneHandler  |  Barcode = 0085544330  |  Time start = 12/7/2023 3:25:22 PM
+2023-12-07 15:25:22,268	 []	 INFO 	 TEST_APP_2010	15:25:22.2680144	TestRecipeDoneHandler	RecipeDoneHandler	Executing test recipe done handler...
+2023-12-07 15:25:22,268	 []	 INFO 	 TEST_APP_2010	15:25:22.2680144	TestRecipeDoneHandler	RecipeDoneHandler	Tests that executed more than once:
+2023-12-07 15:25:22,268	 []	 INFO 	 TEST_APP_2010	15:25:22.2680144	TestRecipeDoneHandler	Diagnostic	Logging diagnostic/debug settings used during testing by adding the settings to the MQS software version records.
+2023-12-07 15:25:22,268	 []	 INFO 	 TEST_APP_2010	15:25:22.2680144	TestRecipeDoneHandler	Diagnostic	Diagnostic/debug settings used during testing:
+2023-12-07 15:25:22,268	 []	 INFO 	 TEST_APP_2010	15:25:22.2680144	TestRecipeDoneHandler	Diagnostic	UnitInfoTransactionsWithBusinessSystemEnable = True
+2023-12-07 15:25:22,268	 []	 INFO 	 TEST_APP_2010	15:25:22.2680144	TestRecipeDoneHandler	Diagnostic	NexTestVersionCheckingEnabled = True
+2023-12-07 15:25:22,268	 []	 INFO 	 TEST_APP_2010	15:25:22.2680144	TestRecipeDoneHandler	Diagnostic	FailIfRecipeDebuggerWasUsedDuringTesting = True
+2023-12-07 15:25:22,268	 []	 INFO 	 TEST_APP_2010	15:25:22.2680144	TestRecipeDoneHandler	Diagnostic	LockoutRetestingUnitIfFailedFlowControlCheck = True
+2023-12-07 15:25:22,268	 []	 INFO 	 TEST_APP_2010	15:25:22.2680144	TestRecipeDoneHandler	Diagnostic	BypassStationLockout = False
+2023-12-07 15:25:22,268	 []	 INFO 	 TEST_APP_2010	15:25:22.2680144	TestRecipeDoneHandler	Diagnostic	BypassUnitWaitForRemoval = False
+2023-12-07 15:25:22,268	 []	 INFO 	 TEST_APP_2010	15:25:22.2680144	TestRecipeDoneHandler	Diagnostic	OverrideTrackId = 
+2023-12-07 15:25:22,268	 []	 INFO 	 TEST_APP_2010	15:25:22.2680144	TestRecipeDoneHandler	Diagnostic	IsLoopTestRecipeEnabled = False
+2023-12-07 15:25:22,268	 []	 INFO 	 TEST_APP_2010	15:25:22.2680144	TestRecipeDoneHandler	Diagnostic	PAUSE_ON_FAIL_AT_TEST_END = False
+2023-12-07 15:25:22,268	 []	 INFO 	 TEST_APP_2010	15:25:22.2680144	TestRecipeDoneHandler	Diagnostic	PAUSE_ON_FAIL_AT_TEST_SPEC_LOGGING = False
+2023-12-07 15:25:22,338	 []	 INFO 	 TEST_APP_2010	15:25:22.3380147	TestRecipeDoneHandler	RecipeDoneHandler	Completed test recipe done handler.
+2023-12-07 15:25:22,338	 []	 INFO 	 TEST_APP_2010	15:25:22.3380147	TestRecipeDoneHandler	Footer	Test = TestRecipeDoneHandler  |  Overall Result = 1  |  Test Time = 70.0003 msec
+2023-12-07 15:25:22,338	 []	 INFO 	 TEST_APP_2010	15:25:22.3380147	TestRecipeDoneHandler	Footer	==========================================================================================================================================================================
+2023-12-07 15:25:22,338	 []	 INFO 	 ENGINE	15:25:22.3380147		Engine	Executing PostProcessResults to upload results to CIM system.
+2023-12-07 15:25:22,338	 []	 INFO 	 ENGINE	15:25:22.3380147		Engine	   Utilize Results Driver For PostProcessing Results
+2023-12-07 15:25:22,338	 []	 INFO 	 ENGINE	15:25:22.3380147		Engine	Activate Tracker
+2023-12-07 15:25:22,338	 []	 INFO 	 ENGINE	15:25:22.3380147		Engine	Execution of PostProcessResults to upload results to CIM system has completed.
+2023-12-07 15:25:22,338	 []	 INFO 	 ENGINE	15:25:22.3380147		Engine	Executing callback function to NexTest2010 test app to indicate recipe is done after running tracker.
+2023-12-07 15:25:22,338	 []	 INFO 	 TEST_APP_2010	15:25:22.3380147	TestRecipeDoneAfterRunningTrackerHandler	Header	==========================================================================================================================================================================
+2023-12-07 15:25:22,338	 []	 INFO 	 TEST_APP_2010	15:25:22.3380147	TestRecipeDoneAfterRunningTrackerHandler	Header	Test = TestRecipeDoneAfterRunningTrackerHandler  |  Barcode = 0085544330  |  Time start = 12/7/2023 3:25:22 PM
+2023-12-07 15:25:22,338	 []	 INFO 	 TEST_APP_2010	15:25:22.3380147	TestRecipeDoneAfterRunningTrackerHandler	RecipeDoneHandler	Executing test recipe done after running tracker handler...
+2023-12-07 15:25:22,338	 []	 INFO 	 TEST_APP_2010	15:25:22.3380147	TestRecipeDoneAfterRunningTrackerHandler	FileManager	Waiting for file process 'AutoSaveLog' to finish...
+2023-12-07 15:25:22,338	 []	 INFO 	 TEST_APP_2010	15:25:22.3380147	TestRecipeDoneAfterRunningTrackerHandler	FileManager	File process 'AutoSaveLog' is finished.
+2023-12-07 15:25:22,338	 []	 INFO 	 TEST_APP_2010	15:25:22.3380147	TestRecipeDoneAfterRunningTrackerHandler	FileManager	Starting thread to run file process 'AutoSaveLog' using a custom fileProcessDoWorkHandler.
+2023-12-07 15:25:22,338	 []	 INFO 	 TEST_APP_2010	15:25:22.3380147	TestRecipeDoneAfterRunningTrackerHandler	FileManager	Starting thread to run file process 'SaveUnitTestRunResults' using a custom fileProcessDoWorkHandler.
+2023-12-07 15:25:22,338	 []	 INFO 	 TEST_APP_2010	15:25:22.3380147	TestRecipeDoneAfterRunningTrackerHandler	RecipeDoneHandler	Completed test recipe done after running tracker handler.
+2023-12-07 15:25:22,338	 []	 INFO 	 TEST_APP_2010	15:25:22.3380147	TestRecipeDoneAfterRunningTrackerHandler	Footer	Test = TestRecipeDoneAfterRunningTrackerHandler  |  Overall Result = 0  |  Test Time = 0 msec
+2023-12-07 15:25:22,338	 []	 INFO 	 TEST_APP_2010	15:25:22.3380147	TestRecipeDoneAfterRunningTrackerHandler	Footer	==========================================================================================================================================================================
+2023-12-07 15:25:22,338	 []	 INFO 	 RECIPE_TEST_END	15:25:22.3380147			
+2023-12-07 15:25:22,338	 []	 INFO 	 ENGINE	15:25:22.3380147		Engine	Executing Recipe exit handler.
+2023-12-07 15:25:22,338	 []	 INFO 	 TEST_APP_2010	15:25:22.3380147		StationResults	Saving unit test results to station local results database...
+2023-12-07 15:25:22,338	 []	 INFO 	 TEST_APP_2010	15:25:22.3380147		AutoSaveLog	Auto saving active OneTestPlus log file and other log files to log package 'C:\prod\log\NexTestLogs_BrdTest_No Data Found_BrdTest_Left_ME06-PB01F1T06-BT008A_Failed_BAD_OR_FAILED_BARCODE_0085544330_2023-12-07_T15-25-22.log_zip'.
+2023-12-07 15:25:22,368	 []	 INFO 	 TEST_APP_2010	15:25:22.3680416	EXIT_HANDLER	Header	==========================================================================================================================================================================
+2023-12-07 15:25:22,368	 []	 INFO 	 TEST_APP_2010	15:25:22.3680416	EXIT_HANDLER	Header	Test = EXIT_HANDLER  |  Barcode = 0085544330  |  Time start = 12/7/2023 3:25:22 PM
+2023-12-07 15:25:22,368	 []	 INFO 	 TEST_APP_2010	15:25:22.3680416	EXIT_HANDLER	ExitHandler	Starting exit handler...
+2023-12-07 15:25:22,398	 []	 INFO 	 TEST_APP_2010	15:25:22.3980140	EXIT_HANDLER	StationResults	Finished saving unit test results to station local results database.
+2023-12-07 15:25:22,398	 []	 INFO 	 TEST_APP_2010	15:25:22.3980140	EXIT_HANDLER	FileManager	File process 'SaveUnitTestRunResults' thread completed with result of 'Saved to database passed.'
+2023-12-07 15:25:24,045	 []	 INFO 	 ID_READER	15:25:24.0456274	EXIT_HANDLER	Trigger	Trigger sent to start scanning for next unit ID...
+2023-12-07 15:25:24,045	 []	 INFO 	 ID_READER	15:25:24.0456274	Simple Phone ID Reader	WorkerThreadReaderFunction	ID reader is now scanning for unit to get track ID.
+2023-12-07 15:25:24,045	 []	 INFO 	 ID_READER	15:25:24.0456274	Simple Phone ID Reader	WorkerThreadReaderFunction	Scanning for unit...	Please connect next unit to test.
+2023-12-07 15:25:24,045	 []	 INFO 	 ID_READER	15:25:24.0456274	Simple Phone ID Reader	Execute	Power up execution starting...
+2023-12-07 15:25:24,045	 []	 INFO 	 TEST_APP_2010	15:25:24.0456274	EXIT_HANDLER	ExitHandler	Exit handler completed.
+2023-12-07 15:25:24,045	 []	 INFO 	 TEST_APP_2010	15:25:24.0456274	Simple Phone ID Reader	StationLockout	Checking if test station is locked out (shutdown) due to failures...
+2023-12-07 15:25:24,055	 []	 INFO 	 ID_READER	15:25:24.0556263	Simple Phone ID Reader	Execute	Waiting to acquire permission to scan for barcode...
+2023-12-07 15:25:24,055	 []	 INFO 	 TEST_APP_2010	15:25:24.0556263	EXIT_HANDLER	Footer	Test = EXIT_HANDLER  |  Overall Result = 0  |  Test Time = 1687.5847 msec
+2023-12-07 15:25:24,055	 []	 INFO 	 TEST_APP_2010	15:25:24.0556263	EXIT_HANDLER	Footer	==========================================================================================================================================================================
+2023-12-07 15:25:24,055	 []	 INFO 	 ENGINE	15:25:24.0556263		Engine	Recipe exit handler has completed.
+2023-12-07 15:25:24,055	 []	 INFO 	 ENGINE	15:25:24.0556263		Engine	Unit has FAILED.
+2023-12-07 15:25:24,055	 []	 INFO 	 ENGINE	15:25:24.0556263		Engine	Executing system exit handler.
+2023-12-07 15:25:24,055	 []	 INFO 	 ENGINE	15:25:24.0556263		Engine	System exit handler has completed.
+2023-12-07 15:25:24,055	 []	 INFO 	 ID_READER	15:25:24.0556263		GetID	Waiting for unit to arrive and for its track ID to become available...
+2023-12-07 15:25:24,055	 []	 INFO 	 ID_READER	15:25:24.0556263	Simple Phone ID Reader	Execute	Going to wait infinitely for mutex LABEL SCANNING ACROSS PROCESSES
+2023-12-07 15:25:27,360	 []	 INFO 	 TEST_APP_2010	15:25:27.3600597		AutoSaveLog	Finished creating OneTestPlus .log_zip log package.

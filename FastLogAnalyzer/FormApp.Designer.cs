@@ -45,11 +45,13 @@
             this.textBoxFail = new System.Windows.Forms.TextBox();
             this.labelStatus = new System.Windows.Forms.Label();
             this.labelFails = new System.Windows.Forms.Label();
+            this.labelAddress = new System.Windows.Forms.Label();
             this.groupBoxSelectLog.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBoxSelectLog
             // 
+            this.groupBoxSelectLog.Controls.Add(this.labelAddress);
             this.groupBoxSelectLog.Controls.Add(this.labelFails);
             this.groupBoxSelectLog.Controls.Add(this.buttonUpdate);
             this.groupBoxSelectLog.Controls.Add(this.buttonSelectLog);
@@ -57,9 +59,9 @@
             this.groupBoxSelectLog.Controls.Add(this.labelRow);
             this.groupBoxSelectLog.Controls.Add(this.textBoxNRows);
             this.groupBoxSelectLog.Controls.Add(this.textBoxAddressLog);
-            this.groupBoxSelectLog.Location = new System.Drawing.Point(2, 88);
+            this.groupBoxSelectLog.Location = new System.Drawing.Point(2, 81);
             this.groupBoxSelectLog.Name = "groupBoxSelectLog";
-            this.groupBoxSelectLog.Size = new System.Drawing.Size(250, 163);
+            this.groupBoxSelectLog.Size = new System.Drawing.Size(250, 170);
             this.groupBoxSelectLog.TabIndex = 0;
             this.groupBoxSelectLog.TabStop = false;
             this.groupBoxSelectLog.Text = "SelectLog";
@@ -68,7 +70,7 @@
             // 
             this.buttonUpdate.Enabled = false;
             this.buttonUpdate.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonUpdate.Location = new System.Drawing.Point(148, 119);
+            this.buttonUpdate.Location = new System.Drawing.Point(169, 126);
             this.buttonUpdate.Name = "buttonUpdate";
             this.buttonUpdate.Size = new System.Drawing.Size(75, 38);
             this.buttonUpdate.TabIndex = 5;
@@ -77,7 +79,7 @@
             // 
             // buttonSelectLog
             // 
-            this.buttonSelectLog.Location = new System.Drawing.Point(204, 25);
+            this.buttonSelectLog.Location = new System.Drawing.Point(204, 32);
             this.buttonSelectLog.Name = "buttonSelectLog";
             this.buttonSelectLog.Size = new System.Drawing.Size(40, 23);
             this.buttonSelectLog.TabIndex = 4;
@@ -91,7 +93,7 @@
             this.comboBoxFails.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBoxFails.Enabled = false;
             this.comboBoxFails.FormattingEnabled = true;
-            this.comboBoxFails.Location = new System.Drawing.Point(6, 79);
+            this.comboBoxFails.Location = new System.Drawing.Point(6, 86);
             this.comboBoxFails.Name = "comboBoxFails";
             this.comboBoxFails.Size = new System.Drawing.Size(238, 21);
             this.comboBoxFails.TabIndex = 3;
@@ -100,7 +102,7 @@
             // 
             this.labelRow.AutoSize = true;
             this.labelRow.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelRow.Location = new System.Drawing.Point(74, 119);
+            this.labelRow.Location = new System.Drawing.Point(74, 126);
             this.labelRow.Name = "labelRow";
             this.labelRow.Size = new System.Drawing.Size(42, 16);
             this.labelRow.TabIndex = 2;
@@ -110,7 +112,7 @@
             // 
             this.textBoxNRows.BackColor = System.Drawing.Color.White;
             this.textBoxNRows.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxNRows.Location = new System.Drawing.Point(6, 116);
+            this.textBoxNRows.Location = new System.Drawing.Point(6, 123);
             this.textBoxNRows.Name = "textBoxNRows";
             this.textBoxNRows.Size = new System.Drawing.Size(62, 22);
             this.textBoxNRows.TabIndex = 1;
@@ -120,7 +122,7 @@
             // textBoxAddressLog
             // 
             this.textBoxAddressLog.BackColor = System.Drawing.Color.White;
-            this.textBoxAddressLog.Location = new System.Drawing.Point(6, 28);
+            this.textBoxAddressLog.Location = new System.Drawing.Point(6, 35);
             this.textBoxAddressLog.Name = "textBoxAddressLog";
             this.textBoxAddressLog.ReadOnly = true;
             this.textBoxAddressLog.Size = new System.Drawing.Size(192, 20);
@@ -158,11 +160,11 @@
             this.textBoxStatus.BackColor = System.Drawing.Color.White;
             this.textBoxStatus.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBoxStatus.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxStatus.Location = new System.Drawing.Point(8, 283);
+            this.textBoxStatus.Location = new System.Drawing.Point(8, 462);
             this.textBoxStatus.Multiline = true;
             this.textBoxStatus.Name = "textBoxStatus";
             this.textBoxStatus.ReadOnly = true;
-            this.textBoxStatus.Size = new System.Drawing.Size(244, 98);
+            this.textBoxStatus.Size = new System.Drawing.Size(244, 92);
             this.textBoxStatus.TabIndex = 3;
             this.textBoxStatus.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -170,7 +172,7 @@
             // 
             this.labelTrackId.AutoSize = true;
             this.labelTrackId.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelTrackId.Location = new System.Drawing.Point(-2, 414);
+            this.labelTrackId.Location = new System.Drawing.Point(4, 266);
             this.labelTrackId.Name = "labelTrackId";
             this.labelTrackId.Size = new System.Drawing.Size(73, 20);
             this.labelTrackId.TabIndex = 4;
@@ -180,7 +182,7 @@
             // 
             this.labelTrackIdNumber.AutoSize = true;
             this.labelTrackIdNumber.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelTrackIdNumber.Location = new System.Drawing.Point(103, 414);
+            this.labelTrackIdNumber.Location = new System.Drawing.Point(81, 266);
             this.labelTrackIdNumber.Name = "labelTrackIdNumber";
             this.labelTrackIdNumber.Size = new System.Drawing.Size(0, 20);
             this.labelTrackIdNumber.TabIndex = 5;
@@ -189,7 +191,7 @@
             // 
             this.labelFail.AutoSize = true;
             this.labelFail.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.labelFail.Location = new System.Drawing.Point(-2, 451);
+            this.labelFail.Location = new System.Drawing.Point(4, 300);
             this.labelFail.Name = "labelFail";
             this.labelFail.Size = new System.Drawing.Size(38, 20);
             this.labelFail.TabIndex = 6;
@@ -199,20 +201,20 @@
             // 
             this.textBoxFail.BackColor = System.Drawing.Color.White;
             this.textBoxFail.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.textBoxFail.Location = new System.Drawing.Point(42, 451);
+            this.textBoxFail.Location = new System.Drawing.Point(8, 323);
             this.textBoxFail.Multiline = true;
             this.textBoxFail.Name = "textBoxFail";
             this.textBoxFail.ReadOnly = true;
-            this.textBoxFail.Size = new System.Drawing.Size(210, 103);
+            this.textBoxFail.Size = new System.Drawing.Size(244, 103);
             this.textBoxFail.TabIndex = 7;
             // 
             // labelStatus
             // 
             this.labelStatus.AutoSize = true;
-            this.labelStatus.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelStatus.Location = new System.Drawing.Point(5, 264);
+            this.labelStatus.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelStatus.Location = new System.Drawing.Point(4, 439);
             this.labelStatus.Name = "labelStatus";
-            this.labelStatus.Size = new System.Drawing.Size(48, 16);
+            this.labelStatus.Size = new System.Drawing.Size(60, 20);
             this.labelStatus.TabIndex = 8;
             this.labelStatus.Text = "Status:";
             // 
@@ -220,11 +222,21 @@
             // 
             this.labelFails.AutoSize = true;
             this.labelFails.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelFails.Location = new System.Drawing.Point(3, 60);
+            this.labelFails.Location = new System.Drawing.Point(3, 67);
             this.labelFails.Name = "labelFails";
             this.labelFails.Size = new System.Drawing.Size(59, 16);
             this.labelFails.TabIndex = 6;
             this.labelFails.Text = "Failures:";
+            // 
+            // labelAddress
+            // 
+            this.labelAddress.AutoSize = true;
+            this.labelAddress.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelAddress.Location = new System.Drawing.Point(3, 16);
+            this.labelAddress.Name = "labelAddress";
+            this.labelAddress.Size = new System.Drawing.Size(96, 16);
+            this.labelAddress.TabIndex = 7;
+            this.labelAddress.Text = "Select the Log:";
             // 
             // FormApp
             // 
@@ -269,6 +281,7 @@
         public System.Windows.Forms.ComboBox comboBoxFails;
         private System.Windows.Forms.Label labelFails;
         private System.Windows.Forms.Label labelStatus;
+        private System.Windows.Forms.Label labelAddress;
     }
 }
 

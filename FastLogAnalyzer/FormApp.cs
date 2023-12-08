@@ -42,7 +42,8 @@ namespace FastLogAnalyzer
 
             if (labelTrackIdNumber.Text != "" && SL.Extract(response))
             {
-                textBoxStatus.Text = "File Imported Successfully!!!";
+                // textBoxStatus.Text = Environment.NewLine
+                textBoxStatus.Text = Environment.NewLine + "File Imported Successfully!!!";
                 // SL.AddingReaderToLog(response);
                 reader(response);
             }
