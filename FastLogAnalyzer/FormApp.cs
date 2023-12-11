@@ -39,10 +39,10 @@ namespace FastLogAnalyzer
         private void buttonSelectLog_Click(object sender, EventArgs e)
         {
             string response = SL.SelectingLog();
-            labelTrackIdNumber.Text = response.Substring(0, 10);
 
             if (labelTrackIdNumber.Text != "" && SL.Extract(response))
             {
+                labelTrackIdNumber.Text = response.Substring(0, 10);
                 textBoxStatus.Text = Environment.NewLine + "File Imported Successfully!!!";
                 reader(response);
             }
