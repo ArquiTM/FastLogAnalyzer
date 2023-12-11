@@ -17,9 +17,7 @@ namespace FastLogAnalyzer
             INSTANCE = this;
             createDirectory();
             classesInit();
-        }
-
-
+        }     
         private void createDirectory()
         {
             textBoxStatus.Text = Environment.NewLine + "Waiting Select Log...";
@@ -76,6 +74,17 @@ namespace FastLogAnalyzer
         {
             textBoxResult.Text = "";
             RL.ShowErrorOnTextBox(logTemp);
+        }
+
+        protected override void OnFormClosing(FormClosingEventArgs e)
+        {
+            if (MessageBox.Show("Are you sure that you would like to exit?", "Close the program", MessageBoxButtons.YesNo) == DialogResult.No)
+            {
+                e.Cancel = true;
+            }
+            
+            if (Directory.Exists("temp"))
+                Directory.Delete("temp", true);
         }
     }
 }
