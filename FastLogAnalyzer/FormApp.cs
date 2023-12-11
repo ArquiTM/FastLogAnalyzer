@@ -1,5 +1,6 @@
 ﻿using System;
 using System.IO;
+using System.Threading;
 using System.Windows.Forms;
 
 namespace FastLogAnalyzer
@@ -16,14 +17,21 @@ namespace FastLogAnalyzer
             InitializeComponent();
             INSTANCE = this;
             createDirectory();
-            ClassesInit();
+            classesInit();
+
         }
+
+
         private void createDirectory()
         {
+            textBoxStatus.Text = Environment.NewLine + "Waiting Select Log...";
+            Application.DoEvents();
+
             if (!Directory.Exists("temp"))
                 Directory.CreateDirectory("temp");
+
         }
-        private void ClassesInit()
+        private void classesInit()
         {
             SL = new SelectLog();
             RL = new ReadLog();
@@ -36,14 +44,17 @@ namespace FastLogAnalyzer
             return INSTANCE;
         }
 
+
         private void buttonSelectLog_Click(object sender, EventArgs e)
         {
+            textBoxStatus.Text = Environment.NewLine + "Loading...";
+            Application.DoEvents();
+
             string response = SL.SelectingLog();
 
             if (response != "" && SL.Extract(response))
             {
                 labelTrackIdNumber.Text = response.Substring(0, 10);
-                textBoxStatus.Text = Environment.NewLine + "File Imported Successfully!!!";
                 reader(response);
             }
 
@@ -60,8 +71,10 @@ namespace FastLogAnalyzer
                 if (!f.Contains("startup") && f.Contains(".log"))
                     filePath = f;
             }
+
             logTemp = SL.AddingReaderToLog(filePath);
-            RL.FillingComboBox(logTemp);
+            if (RL.FillingComboBox(logTemp))
+                textBoxStatus.Text = Environment.NewLine + "File Imported Successfully!!!";
         }
 
         private void comboBoxFails_SelectedIndexChanged(object sender, EventArgs e)

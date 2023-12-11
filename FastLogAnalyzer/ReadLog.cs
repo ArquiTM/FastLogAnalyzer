@@ -8,20 +8,30 @@ namespace FastLogAnalyzer
     {
         FormApp frmMain = FormApp.getInstance();
         int rows = 1;
-        public void FillingComboBox(string filePath)
+
+        public bool FillingComboBox(string filePath)
         {
-            string line = string.Empty;
-            using (var reader = new StreamReader(filePath))
+            try
             {
-                while ((line = reader.ReadLine()) != null)
+                string line = string.Empty;
+                using (var reader = new StreamReader(filePath))
                 {
-                    rows++;
-                    if (line.Contains("* FAILED *"))
+                    while ((line = reader.ReadLine()) != null)
                     {
-                        string[] error = line.Split('\t');
-                        frmMain.comboBoxFails.Items.Add(error[9]);
+                        rows++;
+                        if (line.Contains("* FAILED *"))
+                        {
+                            string[] error = line.Split('\t');
+                            frmMain.comboBoxFails.Items.Add(error[9]);
+                        }
                     }
                 }
+                return true;
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show("Error ShowErrorOnTextBox() method: " + e.Message);
+                return false;
             }
         }
 
