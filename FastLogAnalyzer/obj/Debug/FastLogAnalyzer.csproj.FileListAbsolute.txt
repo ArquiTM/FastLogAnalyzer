@@ -9,3 +9,14 @@ C:\Projetos\FastLogAnalyzer\FastLogAnalyzer\obj\Debug\FastLogAnalyzer.csproj.Cor
 C:\Projetos\FastLogAnalyzer\FastLogAnalyzer\obj\Debug\FastLogAnalyzer.csproj.CopyComplete
 C:\Projetos\FastLogAnalyzer\FastLogAnalyzer\obj\Debug\FastLogAnalyzer.exe
 C:\Projetos\FastLogAnalyzer\FastLogAnalyzer\obj\Debug\FastLogAnalyzer.pdb
+E:\DesvelopmentProjects\FastLogAnalyzer\FastLogAnalyzer\bin\Debug\FastLogAnalyzer.exe.config
+E:\DesvelopmentProjects\FastLogAnalyzer\FastLogAnalyzer\bin\Debug\FastLogAnalyzer.exe
+E:\DesvelopmentProjects\FastLogAnalyzer\FastLogAnalyzer\bin\Debug\FastLogAnalyzer.pdb
+E:\DesvelopmentProjects\FastLogAnalyzer\FastLogAnalyzer\bin\Debug\System.IO.Compression.dll
+E:\DesvelopmentProjects\FastLogAnalyzer\FastLogAnalyzer\obj\Debug\FastLogAnalyzer.FormApp.resources
+E:\DesvelopmentProjects\FastLogAnalyzer\FastLogAnalyzer\obj\Debug\FastLogAnalyzer.Properties.Resources.resources
+E:\DesvelopmentProjects\FastLogAnalyzer\FastLogAnalyzer\obj\Debug\FastLogAnalyzer.csproj.GenerateResource.cache
+E:\DesvelopmentProjects\FastLogAnalyzer\FastLogAnalyzer\obj\Debug\FastLogAnalyzer.csproj.CoreCompileInputs.cache
+E:\DesvelopmentProjects\FastLogAnalyzer\FastLogAnalyzer\obj\Debug\FastLogAnalyzer.csproj.CopyComplete
+E:\DesvelopmentProjects\FastLogAnalyzer\FastLogAnalyzer\obj\Debug\FastLogAnalyzer.exe
+E:\DesvelopmentProjects\FastLogAnalyzer\FastLogAnalyzer\obj\Debug\FastLogAnalyzer.pdb

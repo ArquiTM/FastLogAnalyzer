@@ -153,13 +153,16 @@
             // 
             // textBoxResult
             // 
+            this.textBoxResult.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.textBoxResult.BackColor = System.Drawing.Color.White;
             this.textBoxResult.Location = new System.Drawing.Point(258, 88);
             this.textBoxResult.Multiline = true;
             this.textBoxResult.Name = "textBoxResult";
             this.textBoxResult.ReadOnly = true;
             this.textBoxResult.ScrollBars = System.Windows.Forms.ScrollBars.Both;
-            this.textBoxResult.Size = new System.Drawing.Size(883, 466);
+            this.textBoxResult.Size = new System.Drawing.Size(738, 466);
             this.textBoxResult.TabIndex = 2;
             this.textBoxResult.WordWrap = false;
             // 
@@ -232,6 +235,7 @@
             // 
             // labelDeveloped
             // 
+            this.labelDeveloped.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.labelDeveloped.AutoSize = true;
             this.labelDeveloped.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Italic);
             this.labelDeveloped.Location = new System.Drawing.Point(5, 552);
@@ -242,8 +246,9 @@
             // 
             // pictureBox1
             // 
+            this.pictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBox1.Image = global::FastLogAnalyzer.Properties.Resources.flex;
-            this.pictureBox1.Location = new System.Drawing.Point(1034, 20);
+            this.pictureBox1.Location = new System.Drawing.Point(889, 20);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(107, 62);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -255,7 +260,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1153, 566);
+            this.ClientSize = new System.Drawing.Size(1008, 566);
             this.Controls.Add(this.labelDeveloped);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.labelStatus);
@@ -268,6 +273,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.groupBoxSelectLog);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MinimumSize = new System.Drawing.Size(1024, 605);
             this.Name = "FormApp";
             this.Text = "Fast Log Analyzer v0.1";
             this.groupBoxSelectLog.ResumeLayout(false);
