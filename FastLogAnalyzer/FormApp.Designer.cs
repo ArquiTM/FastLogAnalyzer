@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormApp));
             this.groupBoxSelectLog = new System.Windows.Forms.GroupBox();
             this.labelAddress = new System.Windows.Forms.Label();
             this.labelFails = new System.Windows.Forms.Label();
@@ -45,8 +46,8 @@
             this.labelFail = new System.Windows.Forms.Label();
             this.textBoxFail = new System.Windows.Forms.TextBox();
             this.labelStatus = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.labelDeveloped = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.groupBoxSelectLog.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -229,16 +230,6 @@
             this.labelStatus.TabIndex = 8;
             this.labelStatus.Text = "Status:";
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::FastLogAnalyzer.Properties.Resources.flex;
-            this.pictureBox1.Location = new System.Drawing.Point(1034, 20);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(107, 62);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 9;
-            this.pictureBox1.TabStop = false;
-            // 
             // labelDeveloped
             // 
             this.labelDeveloped.AutoSize = true;
@@ -248,6 +239,16 @@
             this.labelDeveloped.Size = new System.Drawing.Size(187, 13);
             this.labelDeveloped.TabIndex = 10;
             this.labelDeveloped.Text = "Developed by Arquimedes M. / R. Kelin";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::FastLogAnalyzer.Properties.Resources.flex;
+            this.pictureBox1.Location = new System.Drawing.Point(1034, 20);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(107, 62);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 9;
+            this.pictureBox1.TabStop = false;
             // 
             // FormApp
             // 
@@ -266,6 +267,7 @@
             this.Controls.Add(this.textBoxResult);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.groupBoxSelectLog);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FormApp";
             this.Text = "Fast Log Analyzer v0.1";
             this.groupBoxSelectLog.ResumeLayout(false);
