@@ -46,6 +46,7 @@
             this.textBoxFail = new System.Windows.Forms.TextBox();
             this.labelStatus = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.labelDeveloped = new System.Windows.Forms.Label();
             this.groupBoxSelectLog.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -170,7 +171,7 @@
             this.textBoxStatus.BackColor = System.Drawing.Color.White;
             this.textBoxStatus.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBoxStatus.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxStatus.Location = new System.Drawing.Point(8, 474);
+            this.textBoxStatus.Location = new System.Drawing.Point(8, 470);
             this.textBoxStatus.Multiline = true;
             this.textBoxStatus.Name = "textBoxStatus";
             this.textBoxStatus.ReadOnly = true;
@@ -222,7 +223,7 @@
             // 
             this.labelStatus.AutoSize = true;
             this.labelStatus.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelStatus.Location = new System.Drawing.Point(4, 451);
+            this.labelStatus.Location = new System.Drawing.Point(4, 448);
             this.labelStatus.Name = "labelStatus";
             this.labelStatus.Size = new System.Drawing.Size(60, 20);
             this.labelStatus.TabIndex = 8;
@@ -238,12 +239,23 @@
             this.pictureBox1.TabIndex = 9;
             this.pictureBox1.TabStop = false;
             // 
+            // labelDeveloped
+            // 
+            this.labelDeveloped.AutoSize = true;
+            this.labelDeveloped.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Italic);
+            this.labelDeveloped.Location = new System.Drawing.Point(5, 552);
+            this.labelDeveloped.Name = "labelDeveloped";
+            this.labelDeveloped.Size = new System.Drawing.Size(187, 13);
+            this.labelDeveloped.TabIndex = 10;
+            this.labelDeveloped.Text = "Developed by Arquimedes M. / R. Kelin";
+            // 
             // FormApp
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1153, 566);
+            this.Controls.Add(this.labelDeveloped);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.labelStatus);
             this.Controls.Add(this.textBoxFail);
@@ -255,7 +267,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.groupBoxSelectLog);
             this.Name = "FormApp";
-            this.Text = "Form1";
+            this.Text = "Fast Log Analyzer v0.1";
             this.groupBoxSelectLog.ResumeLayout(false);
             this.groupBoxSelectLog.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -284,6 +296,7 @@
         public System.Windows.Forms.Label labelTrackIdNumber;
         public System.Windows.Forms.TextBox textBoxStatus;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label labelDeveloped;
     }
 }
 
