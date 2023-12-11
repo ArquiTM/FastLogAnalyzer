@@ -40,7 +40,7 @@ namespace FastLogAnalyzer
         {
             string response = SL.SelectingLog();
 
-            if (labelTrackIdNumber.Text != "" && SL.Extract(response))
+            if (response != "" && SL.Extract(response))
             {
                 labelTrackIdNumber.Text = response.Substring(0, 10);
                 textBoxStatus.Text = Environment.NewLine + "File Imported Successfully!!!";
