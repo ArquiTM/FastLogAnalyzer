@@ -20,6 +20,8 @@ namespace FastLogAnalyzer
                 if (frmMain.openFileDialog1.ShowDialog() == DialogResult.OK)
                 {
                     ClearInformations();
+                    frmMain.textBoxStatus.Text = Environment.NewLine + "Loading failures...";
+                    Application.DoEvents();
                     DateTime dt = DateTime.Now;
                     string hour = dt.ToString("dd-MM-yy-HH_mm_ss");
 
@@ -59,12 +61,6 @@ namespace FastLogAnalyzer
 
                     return subFolderName;
                 }
-                else if (frmMain.textBoxAddressLog.Text == "")
-                {
-                    frmMain.textBoxStatus.Text = Environment.NewLine + "Waiting Select Log...";
-                    Application.DoEvents();
-                }
-
                 return "";
             }
             catch (Exception e)
@@ -75,6 +71,7 @@ namespace FastLogAnalyzer
         }
         private void ClearInformations()
         {
+            frmMain.comboBoxFails.Text = "";
             frmMain.comboBoxFails.Items.Clear();
             frmMain.textBoxResult.Text = "";
             frmMain.textBoxFail.Text = "";

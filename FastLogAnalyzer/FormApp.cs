@@ -45,9 +45,6 @@ namespace FastLogAnalyzer
 
         private void buttonSelectLog_Click(object sender, EventArgs e)
         {
-            textBoxStatus.Text = Environment.NewLine + "Loading failures...";
-            Application.DoEvents();
-
             string response = SL.SelectingLog();
 
             if (response != "" && SL.Extract(response))
