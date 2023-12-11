@@ -29,13 +29,14 @@ namespace FastLogAnalyzer
 
             if (!Directory.Exists("temp"))
                 Directory.CreateDirectory("temp");
-
         }
+
         private void classesInit()
         {
             SL = new SelectLog();
             RL = new ReadLog();
         }
+
         public static FormApp getInstance()
         {
             if (INSTANCE == null)
@@ -44,10 +45,9 @@ namespace FastLogAnalyzer
             return INSTANCE;
         }
 
-
         private void buttonSelectLog_Click(object sender, EventArgs e)
         {
-            textBoxStatus.Text = Environment.NewLine + "Loading...";
+            textBoxStatus.Text = Environment.NewLine + "Loading failures...";
             Application.DoEvents();
 
             string response = SL.SelectingLog();

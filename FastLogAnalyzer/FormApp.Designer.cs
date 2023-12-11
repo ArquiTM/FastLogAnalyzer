@@ -272,7 +272,6 @@
         private System.Windows.Forms.Label label1;
         public System.Windows.Forms.OpenFileDialog openFileDialog1;
         public System.Windows.Forms.TextBox textBoxAddressLog;
-        private System.Windows.Forms.TextBox textBoxStatus;
         private System.Windows.Forms.Label labelTrackId;
         private System.Windows.Forms.Label labelFail;
         public System.Windows.Forms.TextBox textBoxFail;
@@ -283,6 +282,7 @@
         public System.Windows.Forms.TextBox textBoxNRows;
         public System.Windows.Forms.TextBox textBoxResult;
         public System.Windows.Forms.Label labelTrackIdNumber;
+        public System.Windows.Forms.TextBox textBoxStatus;
     }
 }
 

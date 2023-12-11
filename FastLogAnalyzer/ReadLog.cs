@@ -39,6 +39,7 @@ namespace FastLogAnalyzer
         {
             try
             {
+                frmMain.textBoxStatus.Text = Environment.NewLine + "Filling Lines...";
                 string[] line = new string[rows];
                 int i = 0;
                 int rowsTx = int.Parse(frmMain.textBoxNRows.Text);
@@ -69,6 +70,7 @@ namespace FastLogAnalyzer
                         i++;
                     }
                 }
+                frmMain.textBoxStatus.Text = Environment.NewLine + "Completed!!!";
             }
             catch (Exception e)
             {
