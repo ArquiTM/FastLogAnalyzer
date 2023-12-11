@@ -59,6 +59,12 @@ namespace FastLogAnalyzer
 
                     return subFolderName;
                 }
+                else if (frmMain.textBoxAddressLog.Text == "")
+                {
+                    frmMain.textBoxStatus.Text = Environment.NewLine + "Waiting Select Log...";
+                    Application.DoEvents();
+                }
+
                 return "";
             }
             catch (Exception e)
