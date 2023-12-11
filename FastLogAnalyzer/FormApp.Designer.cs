@@ -45,7 +45,9 @@
             this.labelFail = new System.Windows.Forms.Label();
             this.textBoxFail = new System.Windows.Forms.TextBox();
             this.labelStatus = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.groupBoxSelectLog.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBoxSelectLog
@@ -201,9 +203,9 @@
             this.labelFail.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.labelFail.Location = new System.Drawing.Point(4, 300);
             this.labelFail.Name = "labelFail";
-            this.labelFail.Size = new System.Drawing.Size(38, 20);
+            this.labelFail.Size = new System.Drawing.Size(122, 20);
             this.labelFail.TabIndex = 6;
-            this.labelFail.Text = "Fail:";
+            this.labelFail.Text = "Fail Description:";
             // 
             // textBoxFail
             // 
@@ -226,12 +228,23 @@
             this.labelStatus.TabIndex = 8;
             this.labelStatus.Text = "Status:";
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::FastLogAnalyzer.Properties.Resources.flex;
+            this.pictureBox1.Location = new System.Drawing.Point(1034, 20);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(107, 62);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 9;
+            this.pictureBox1.TabStop = false;
+            // 
             // FormApp
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1153, 566);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.labelStatus);
             this.Controls.Add(this.textBoxFail);
             this.Controls.Add(this.labelFail);
@@ -245,6 +258,7 @@
             this.Text = "Form1";
             this.groupBoxSelectLog.ResumeLayout(false);
             this.groupBoxSelectLog.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -269,6 +283,7 @@
         public System.Windows.Forms.TextBox textBoxResult;
         public System.Windows.Forms.Label labelTrackIdNumber;
         public System.Windows.Forms.TextBox textBoxStatus;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
 
