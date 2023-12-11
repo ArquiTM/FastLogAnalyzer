@@ -274,7 +274,6 @@
         public System.Windows.Forms.TextBox textBoxAddressLog;
         private System.Windows.Forms.TextBox textBoxStatus;
         private System.Windows.Forms.Label labelTrackId;
-        private System.Windows.Forms.Label labelTrackIdNumber;
         private System.Windows.Forms.Label labelFail;
         public System.Windows.Forms.TextBox textBoxFail;
         public System.Windows.Forms.ComboBox comboBoxFails;
@@ -283,6 +282,7 @@
         private System.Windows.Forms.Label labelAddress;
         public System.Windows.Forms.TextBox textBoxNRows;
         public System.Windows.Forms.TextBox textBoxResult;
+        public System.Windows.Forms.Label labelTrackIdNumber;
     }
 }
 

@@ -19,8 +19,7 @@ namespace FastLogAnalyzer
                 frmMain.openFileDialog1.Filter = "All files (*.*)|*.*";
                 if (frmMain.openFileDialog1.ShowDialog() == DialogResult.OK)
                 {
-                    frmMain.comboBoxFails.Items.Clear();
-                    frmMain.textBoxResult.Text = "";
+                    ClearInformations();
                     DateTime dt = DateTime.Now;
                     string hour = dt.ToString("dd-MM-yy-HH_mm_ss");
 
@@ -67,6 +66,13 @@ namespace FastLogAnalyzer
                 MessageBox.Show("Error SelectingLog() method: " + e.Message);
                 return "";
             }
+        }
+        private void ClearInformations()
+        {
+            frmMain.comboBoxFails.Items.Clear();
+            frmMain.textBoxResult.Text = "";
+            frmMain.textBoxFail.Text = "";
+            frmMain.labelTrackIdNumber.Text = "";
         }
 
         public bool Extract(string folder)
