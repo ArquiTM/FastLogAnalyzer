@@ -31,7 +31,6 @@
             this.groupBoxSelectLog = new System.Windows.Forms.GroupBox();
             this.labelAddress = new System.Windows.Forms.Label();
             this.labelFails = new System.Windows.Forms.Label();
-            this.buttonUpdate = new System.Windows.Forms.Button();
             this.buttonSelectLog = new System.Windows.Forms.Button();
             this.comboBoxFails = new System.Windows.Forms.ComboBox();
             this.labelRow = new System.Windows.Forms.Label();
@@ -53,7 +52,6 @@
             // 
             this.groupBoxSelectLog.Controls.Add(this.labelAddress);
             this.groupBoxSelectLog.Controls.Add(this.labelFails);
-            this.groupBoxSelectLog.Controls.Add(this.buttonUpdate);
             this.groupBoxSelectLog.Controls.Add(this.buttonSelectLog);
             this.groupBoxSelectLog.Controls.Add(this.comboBoxFails);
             this.groupBoxSelectLog.Controls.Add(this.labelRow);
@@ -85,17 +83,6 @@
             this.labelFails.Size = new System.Drawing.Size(59, 16);
             this.labelFails.TabIndex = 6;
             this.labelFails.Text = "Failures:";
-            // 
-            // buttonUpdate
-            // 
-            this.buttonUpdate.Enabled = false;
-            this.buttonUpdate.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonUpdate.Location = new System.Drawing.Point(169, 126);
-            this.buttonUpdate.Name = "buttonUpdate";
-            this.buttonUpdate.Size = new System.Drawing.Size(75, 38);
-            this.buttonUpdate.TabIndex = 5;
-            this.buttonUpdate.Text = "Update";
-            this.buttonUpdate.UseVisualStyleBackColor = true;
             // 
             // buttonSelectLog
             // 
@@ -266,7 +253,6 @@
         #endregion
 
         private System.Windows.Forms.GroupBox groupBoxSelectLog;
-        private System.Windows.Forms.Button buttonUpdate;
         private System.Windows.Forms.Button buttonSelectLog;
         private System.Windows.Forms.Label labelRow;
         private System.Windows.Forms.Label label1;

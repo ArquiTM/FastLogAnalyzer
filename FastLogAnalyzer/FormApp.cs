@@ -1,6 +1,5 @@
 ﻿using System;
 using System.IO;
-using System.Threading;
 using System.Windows.Forms;
 
 namespace FastLogAnalyzer
@@ -18,7 +17,6 @@ namespace FastLogAnalyzer
             INSTANCE = this;
             createDirectory();
             classesInit();
-
         }
 
 
