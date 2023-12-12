@@ -48,8 +48,10 @@
             this.labelStatus = new System.Windows.Forms.Label();
             this.labelDeveloped = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.groupBoxLogInformations = new System.Windows.Forms.GroupBox();
             this.groupBoxSelectLog.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.groupBoxLogInformations.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBoxSelectLog
@@ -174,64 +176,64 @@
             // 
             this.textBoxStatus.BackColor = System.Drawing.Color.White;
             this.textBoxStatus.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBoxStatus.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxStatus.Location = new System.Drawing.Point(8, 470);
+            this.textBoxStatus.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxStatus.Location = new System.Drawing.Point(6, 221);
             this.textBoxStatus.Multiline = true;
             this.textBoxStatus.Name = "textBoxStatus";
             this.textBoxStatus.ReadOnly = true;
-            this.textBoxStatus.Size = new System.Drawing.Size(244, 80);
+            this.textBoxStatus.Size = new System.Drawing.Size(238, 70);
             this.textBoxStatus.TabIndex = 3;
             this.textBoxStatus.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // labelTrackId
             // 
             this.labelTrackId.AutoSize = true;
-            this.labelTrackId.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelTrackId.Location = new System.Drawing.Point(4, 266);
+            this.labelTrackId.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelTrackId.Location = new System.Drawing.Point(6, 21);
             this.labelTrackId.Name = "labelTrackId";
-            this.labelTrackId.Size = new System.Drawing.Size(73, 20);
+            this.labelTrackId.Size = new System.Drawing.Size(81, 16);
             this.labelTrackId.TabIndex = 4;
-            this.labelTrackId.Text = "Track ID:";
+            this.labelTrackId.Text = "TRACK ID:";
             // 
             // labelTrackIdNumber
             // 
             this.labelTrackIdNumber.AutoSize = true;
-            this.labelTrackIdNumber.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelTrackIdNumber.Location = new System.Drawing.Point(81, 266);
+            this.labelTrackIdNumber.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelTrackIdNumber.Location = new System.Drawing.Point(89, 21);
             this.labelTrackIdNumber.Name = "labelTrackIdNumber";
-            this.labelTrackIdNumber.Size = new System.Drawing.Size(0, 20);
+            this.labelTrackIdNumber.Size = new System.Drawing.Size(0, 16);
             this.labelTrackIdNumber.TabIndex = 5;
             // 
             // labelFail
             // 
             this.labelFail.AutoSize = true;
-            this.labelFail.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.labelFail.Location = new System.Drawing.Point(4, 300);
+            this.labelFail.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelFail.Location = new System.Drawing.Point(6, 71);
             this.labelFail.Name = "labelFail";
-            this.labelFail.Size = new System.Drawing.Size(122, 20);
+            this.labelFail.Size = new System.Drawing.Size(153, 16);
             this.labelFail.TabIndex = 6;
-            this.labelFail.Text = "Fail Description:";
+            this.labelFail.Text = "FAIL DESCRIPITION:";
             // 
             // textBoxFail
             // 
             this.textBoxFail.BackColor = System.Drawing.Color.White;
-            this.textBoxFail.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.textBoxFail.Location = new System.Drawing.Point(8, 323);
+            this.textBoxFail.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxFail.Location = new System.Drawing.Point(10, 94);
             this.textBoxFail.Multiline = true;
             this.textBoxFail.Name = "textBoxFail";
             this.textBoxFail.ReadOnly = true;
-            this.textBoxFail.Size = new System.Drawing.Size(244, 103);
+            this.textBoxFail.Size = new System.Drawing.Size(234, 79);
             this.textBoxFail.TabIndex = 7;
             // 
             // labelStatus
             // 
             this.labelStatus.AutoSize = true;
-            this.labelStatus.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelStatus.Location = new System.Drawing.Point(4, 448);
+            this.labelStatus.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelStatus.Location = new System.Drawing.Point(6, 202);
             this.labelStatus.Name = "labelStatus";
-            this.labelStatus.Size = new System.Drawing.Size(60, 20);
+            this.labelStatus.Size = new System.Drawing.Size(73, 16);
             this.labelStatus.TabIndex = 8;
-            this.labelStatus.Text = "Status:";
+            this.labelStatus.Text = "STATUS:";
             // 
             // labelDeveloped
             // 
@@ -255,20 +257,30 @@
             this.pictureBox1.TabIndex = 9;
             this.pictureBox1.TabStop = false;
             // 
+            // groupBoxLogInformations
+            // 
+            this.groupBoxLogInformations.Controls.Add(this.labelTrackIdNumber);
+            this.groupBoxLogInformations.Controls.Add(this.labelTrackId);
+            this.groupBoxLogInformations.Controls.Add(this.textBoxStatus);
+            this.groupBoxLogInformations.Controls.Add(this.labelStatus);
+            this.groupBoxLogInformations.Controls.Add(this.labelFail);
+            this.groupBoxLogInformations.Controls.Add(this.textBoxFail);
+            this.groupBoxLogInformations.Location = new System.Drawing.Point(2, 257);
+            this.groupBoxLogInformations.Name = "groupBoxLogInformations";
+            this.groupBoxLogInformations.Size = new System.Drawing.Size(250, 297);
+            this.groupBoxLogInformations.TabIndex = 11;
+            this.groupBoxLogInformations.TabStop = false;
+            this.groupBoxLogInformations.Text = "LogInformations";
+            // 
             // FormApp
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1008, 566);
+            this.Controls.Add(this.groupBoxLogInformations);
             this.Controls.Add(this.labelDeveloped);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.labelStatus);
-            this.Controls.Add(this.textBoxFail);
-            this.Controls.Add(this.labelFail);
-            this.Controls.Add(this.labelTrackIdNumber);
-            this.Controls.Add(this.labelTrackId);
-            this.Controls.Add(this.textBoxStatus);
             this.Controls.Add(this.textBoxResult);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.groupBoxSelectLog);
@@ -279,6 +291,8 @@
             this.groupBoxSelectLog.ResumeLayout(false);
             this.groupBoxSelectLog.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.groupBoxLogInformations.ResumeLayout(false);
+            this.groupBoxLogInformations.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -305,6 +319,7 @@
         public System.Windows.Forms.TextBox textBoxStatus;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label labelDeveloped;
+        private System.Windows.Forms.GroupBox groupBoxLogInformations;
     }
 }
 
