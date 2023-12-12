@@ -94,12 +94,6 @@
     <None Include="img\flex.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="img\FLA.ico" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="img\FLA %281%29.ico" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="img\FLA %282%29.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

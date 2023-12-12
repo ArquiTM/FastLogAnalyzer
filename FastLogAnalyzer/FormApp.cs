@@ -17,14 +17,14 @@ namespace FastLogAnalyzer
             INSTANCE = this;
             createDirectory();
             classesInit();
-        }     
+        }
         private void createDirectory()
         {
             textBoxStatus.Text = Environment.NewLine + "Waiting Select Log...";
             Application.DoEvents();
 
-            if (!Directory.Exists("temp"))
-                Directory.CreateDirectory("temp");
+            if (!Directory.Exists("LogDetails"))
+                Directory.CreateDirectory("LogDetails");
         }
 
         private void classesInit()
@@ -57,7 +57,7 @@ namespace FastLogAnalyzer
 
         private void reader(string Folder)
         {
-            string sDir = @".\temp\" + Folder + @"\prod\log\";
+            string sDir = @".\LogDetails\" + Folder + @"\prod\log\";
             string filePath = string.Empty;
             foreach (string f in Directory.GetFiles(sDir))
             {
@@ -82,9 +82,9 @@ namespace FastLogAnalyzer
             {
                 e.Cancel = true;
             }
-            
-            if (Directory.Exists("temp"))
-                Directory.Delete("temp", true);
+
+            if (Directory.Exists("LogDetails"))
+                Directory.Delete("LogDetails", true);
         }
     }
 }

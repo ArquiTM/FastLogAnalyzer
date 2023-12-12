@@ -10,7 +10,7 @@ namespace FastLogAnalyzer
         FormApp frmMain = FormApp.getInstance();
         string fileName;
         string destFile;
-        string folderNameCommon = @".\temp\";
+        string folderNameCommon = @".\LogDetails\";
 
         public string SelectingLog()
         {

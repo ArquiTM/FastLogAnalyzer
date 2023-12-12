@@ -20,3 +20,4 @@ E:\DesvelopmentProjects\FastLogAnalyzer\FastLogAnalyzer\obj\Debug\FastLogAnalyze
 E:\DesvelopmentProjects\FastLogAnalyzer\FastLogAnalyzer\obj\Debug\FastLogAnalyzer.csproj.CopyComplete
 E:\DesvelopmentProjects\FastLogAnalyzer\FastLogAnalyzer\obj\Debug\FastLogAnalyzer.exe
 E:\DesvelopmentProjects\FastLogAnalyzer\FastLogAnalyzer\obj\Debug\FastLogAnalyzer.pdb
+C:\Projetos\FastLogAnalyzer\FastLogAnalyzer\obj\Debug\FastLogAnalyzer.csprojAssemblyReference.cache
