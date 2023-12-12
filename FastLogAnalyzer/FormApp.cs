@@ -79,12 +79,13 @@ namespace FastLogAnalyzer
         protected override void OnFormClosing(FormClosingEventArgs e)
         {
             if (MessageBox.Show("Are you sure that you would like to exit?", "Close the program", MessageBoxButtons.YesNo) == DialogResult.No)
-            {
                 e.Cancel = true;
-            }
 
-            if (Directory.Exists("LogDetails"))
-                Directory.Delete("LogDetails", true);
+            else
+            {
+                if (Directory.Exists("LogDetails"))
+                    Directory.Delete("LogDetails", true);
+            }
         }
     }
 }

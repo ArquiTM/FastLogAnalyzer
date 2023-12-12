@@ -56,6 +56,9 @@ namespace FastLogAnalyzer
 
                             for (int j = startRow; j <= i; j++)
                             {
+                                if (line[j] == "")
+                                    j++;
+
                                 string[] newLine = line[j].Split('\t');
 
                                 for (int y = 0; y < 5; y++)
