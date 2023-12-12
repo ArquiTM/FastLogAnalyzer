@@ -56,10 +56,14 @@ namespace FastLogAnalyzer
 
                             for (int j = startRow; j <= i; j++)
                             {
+                                if (line[j] == "")
+                                    j++;
+
                                 string[] newLine = line[j].Split('\t');
 
                                 for (int y = 0; y < 5; y++)
                                 {
+                                    
                                     line[j] = line[j].Replace("\t\t", "\t");
                                     line[j] = line[j].Replace(newLine[y] + '\t', "");
                                 }
